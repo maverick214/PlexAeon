@@ -1,0 +1,40 @@
+<window id="1">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+<!--		<control type="multiimage">
+			<include>BackgroundVarsGlobal</include>
+			<include>BackgroundVarsGames</include>
+		</control>
+-->
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<visible>!Skin.HasSetting(curtains) + ![[Container.Content(movies) | Container.Content(tvshows)] + [Container().OnNext | Container().OnPrevious]]</visible>
+			<animation effect="zoom" start="110" end="130" center="auto" time="30000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<animation effect="slide" start="-10,-10" end="20,20" time="14000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<animation effect="rotate" center="360,640" start="-2" end="2" time="22000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<texture>$INFO[listitem.property(fanart_image)]</texture>
+			<animation effect="fade" start="10" end="70" time="850">WindowOpen</animation>	
+		</control>
+    	<include>Curtain</include>    
+		
+		<include>Furniture_HomeNowPlaying</include>
+		<include>Furniture_WallBackground</include>
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Furniture_Time</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Furniture_WallTime</include>
+
+		<include>Viewtype_List</include>
+<!--
+		<include>Viewtype_Wall</include>
+		<include>Viewtype_ClearList</include>
+		<include>Viewtype_Showcase</include>
+-->
+		<include>NewMediaMenu</include>
+		<include>Furniture_DarkGradient</include>
+		<include>CerberosSmoke</include>
+		<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+	</controls>
+</window>
