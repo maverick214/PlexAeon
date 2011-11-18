@@ -451,8 +451,6 @@
 			</control>
 
 <control type="group">
-	<include>MediaListSelectDelay</include>
-	<include>MediaViewFade</include>
 	<visible>Control.IsVisible(50)</visible>
 
 	<control type="largeimage">
@@ -473,8 +471,6 @@
 	    <visible>!IsEmpty(ListItem.Rating)</visible>
 		<visible>Skin.HasSetting(movieratingtext)</visible>
 	</control>
-
-	<include>Furniture_ListMediaFlags</include>
 
 	<control type="textbox">
 		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + !Container.Content(plugincontent) + !Container.Content(plugins)</visible>
@@ -515,6 +511,13 @@
 		<autoscroll delay="3000" time="3000" repeat="2000">visible</autoscroll>
 	  <include>Animation_CommonFade</include>
 	</control>
+
+	<include>Furniture_ListMediaFlags</include>
+
+	</control>
+
+<control type="group">
+	<visible>Control.IsVisible(50)</visible>
 
 
 <!-- SINGLE SQUARE -->
@@ -746,7 +749,7 @@
 	<control type="group">
 		<posx>95</posx>
 		<posy>8</posy>
-		<visible>[Skin.HasSetting(singlemovielisticon) + !Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24)] | Container.Content(Seasons)</visible>
+		<visible>[Skin.HasSetting(singlemovielisticon) + !Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24)]] | Container.Content(Seasons)</visible>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="500" />
 			<effect type="slide" start="300,0" end="0,0" time="500" easing="out" tween="quadratic" acceleration="-1" />
@@ -780,7 +783,7 @@
 	<control type="group">
 		<posx>95</posx>
 		<posy>8</posy>
-		<visible>[Container.Content(plugincontent) | Container.Content(plugins) | Container.content(secondary) | [Container.Content(movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Rating) + IsEmpty(Listitem.Property(mediaTag::studio))]] + !Window.IsActive(2)</visible>
+		<visible>[Container.Content(plugincontent) | Container.Content(plugins) | Container.content(secondary)] + !Window.IsActive(2)</visible>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="500" />
 			<effect type="slide" start="300,0" end="0,0" time="500" easing="out" tween="quadratic" acceleration="-1" />
@@ -836,7 +839,7 @@
 	<control type="group">
 		<posx>70</posx>
 		<posy>10</posy>
-		<visible>!Skin.HasSetting(singlemovielisticon) + ![Container.Content(movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Rating) + IsEmpty(Listitem.Property(mediaTag::studio))] + [Window.IsActive(28) | Container.Content(movies) | Container.Content(tvshows)] + !Container.Content(Secondary)</visible>
+		<visible>!Skin.HasSetting(singlemovielisticon) + [Window.IsActive(28) | Container.Content(movies) | Container.Content(tvshows)] + !Container.Content(Secondary)</visible>
 		<animation effect="slide" end="0,-10" time="0" condition="!Skin.HasSetting(nomediaflags)">Conditional</animation>
 
 		<animation type="WindowOpen" reversible="false">

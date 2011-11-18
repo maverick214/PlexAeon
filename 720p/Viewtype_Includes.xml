@@ -158,7 +158,7 @@
 		<control type="group">
 			<visible>true</visible>
 		<animation effect="fade" start="70" end="70" time="500" delay="1500" condition="visible">Conditional</animation>
-		<control type="image">
+		<control type="largeimage">
 			<posx>208</posx>
 			<posy>117</posy>
 			<width min="0" max="80">auto</width>
@@ -172,7 +172,7 @@
 				<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
 			<visible>!IsEmpty(Listitem.Property(mediaTag::contentRating))</visible>
 		</control>	
-		<control type="image">
+		<control type="largeimage">
 			<posx>8</posx>
 			<posy>85</posy>
 			<width min="0" max="80">auto</width>
@@ -194,28 +194,28 @@
 			<animation effect="slide" end="30,-50" time="0" condition="Control.IsVisible(50) + Container.Content(episodes)">Conditional</animation>
 			<orientation>horizontal</orientation>
 			<itemgap>10</itemgap>
-				<control type="image">
+				<control type="largeimage">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteVideoResolutionVars</include>
 					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourVideoResolutionVars</include>
 					<visible>!IsEmpty(Listitem.Property(mediaTag::videoResolution))</visible>
 				</control>	
 
-				<control type="image">
+				<control type="largeimage">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteVideoCodecVars</include>
 					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourVideoCodecVars</include>
 					<visible>!IsEmpty(Listitem.Property(mediaTag::videoCodec))</visible>
 				</control>
 
-				<control type="image">
+				<control type="largeimage">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteAudioCodecVars</include>
 				<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourAudioCodecVars</include>
 					<visible>!IsEmpty(Listitem.Property(mediaTag::audioCodec))</visible>
 				</control>
 
-				<control type="image">
+				<control type="largeimage">
 					<aspectratio>keep</aspectratio>
 					<include>Furniture_ListMediaFlagsVars</include>
 					<visible>!Skin.HasSetting(nomediaflags)</visible>
