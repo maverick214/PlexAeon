@@ -746,7 +746,7 @@
 	<control type="group">
 		<posx>95</posx>
 		<posy>8</posy>
-		<visible>[Skin.HasSetting(singlemovielisticon) + !Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24) | Window.IsActive(1)]] | Container.Content(Seasons)</visible>
+		<visible>[Skin.HasSetting(singlemovielisticon) + !Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24)] | Container.Content(Seasons)</visible>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="500" />
 			<effect type="slide" start="300,0" end="0,0" time="500" easing="out" tween="quadratic" acceleration="-1" />
@@ -780,7 +780,7 @@
 	<control type="group">
 		<posx>95</posx>
 		<posy>8</posy>
-		<visible>[[Window.IsActive(24) + Container.Content(plugincontent)] | Container.Content(plugins) | Container.content(secondary) | [Container.Content(movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Rating) + IsEmpty(Listitem.Property(mediaTag::studio))]] + !Window.IsActive(1) + !Window.IsActive(2)</visible>
+		<visible>[Container.Content(plugincontent) | Container.Content(plugins) | Container.content(secondary) | [Container.Content(movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Rating) + IsEmpty(Listitem.Property(mediaTag::studio))]] + !Window.IsActive(2)</visible>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="500" />
 			<effect type="slide" start="300,0" end="0,0" time="500" easing="out" tween="quadratic" acceleration="-1" />
@@ -836,7 +836,7 @@
 	<control type="group">
 		<posx>70</posx>
 		<posy>10</posy>
-		<visible>!Skin.HasSetting(singlemovielisticon) + ![Container.Content(movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Rating) + IsEmpty(Listitem.Property(mediaTag::studio))] + [Window.IsActive(28) | Container.Content(movies) | Container.Content(tvshows) | Window.IsActive(1)] + !Container.Content(Secondary)</visible>
+		<visible>!Skin.HasSetting(singlemovielisticon) + ![Container.Content(movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Rating) + IsEmpty(Listitem.Property(mediaTag::studio))] + [Window.IsActive(28) | Container.Content(movies) | Container.Content(tvshows)] + !Container.Content(Secondary)</visible>
 		<animation effect="slide" end="0,-10" time="0" condition="!Skin.HasSetting(nomediaflags)">Conditional</animation>
 
 		<animation type="WindowOpen" reversible="false">
