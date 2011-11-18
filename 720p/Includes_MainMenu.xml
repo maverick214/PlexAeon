@@ -227,6 +227,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 				</item>
+<!--
 				<item id="24">
 					<description>Scripts</description>
 					<include>BackgroundVarsScripts</include>
@@ -236,6 +237,7 @@
 					<visible>Skin.HasSetting(scripts)</visible>
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 				</item>
+-->
 				<item id="13">
 					<description>Play DVD</description>
 					<include>BackgroundVarsPlayDVD</include>
@@ -262,7 +264,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<visible>Skin.HasSetting(assistant)</visible>
 				</item>
--->
+
 				<item id="23">
 					<description>Sign out</description>
 					<include>BackgroundVarsSignOut</include>
@@ -272,6 +274,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<visible>Skin.HasSetting(signout)</visible>
 				</item>
+-->
 				</content>
 		</control>
 	</include>
@@ -363,6 +366,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
+<!--
 				<item id="24">
 					<label>31020</label>
 					<include>BackgroundVarsScripts</include>
@@ -371,6 +375,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(scripts)</visible>
 				</item>
+-->
 				<item id="9">
 					<include>BackgroundVarsSettings</include>
 					<label>31016</label>
@@ -408,7 +413,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(assistant)</visible>
 				</item>
--->
+
 				<item id="23">
 					<description>Sign Out</description>
 					<label>31209</label>
@@ -418,6 +423,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(signout)</visible>
 				</item>
+-->
 				<item id="22">
 					<description>Shutdown</description>
 					<label>31019</label>
@@ -584,7 +590,7 @@
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="1">
-					<label>$LOCALIZE[31972]</label>
+					<label2>$LOCALIZE[31972]</label2>
 					<include>BackgroundVarsMusic</include>
 					<onclick>Skin.Reset(nomusic)</onclick>
 					<width min="95" max="95">auto</width>
@@ -598,7 +604,7 @@
 					<visible>!Skin.HasSetting(NoPlexOnline)</visible>
 				</item>
 				<item id="2">
-					<label>$LOCALIZE[31952]</label>
+					<label2>$LOCALIZE[31952]</label2>
 					<include>BackgroundVarsGames</include>
 					<onclick>Skin.Reset(NoPlexOnline)</onclick>
 					<width min="95" max="95">auto</width>
@@ -612,7 +618,7 @@
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="5">
-					<label>$LOCALIZE[31973]</label>
+					<label2>$LOCALIZE[31973]</label2>
 					<include>BackgroundVarsPictures</include>
 					<onclick>Skin.Reset(nopictures)</onclick>
 					<width min="95" max="95">auto</width>
@@ -655,7 +661,7 @@
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="8">
-					<label>$LOCALIZE[31971]</label>
+					<label2>$LOCALIZE[31971]</label2>
 					<include>BackgroundVarsVideo</include>
 					<onclick>Skin.Reset(novideos)</onclick>
 					<width min="95" max="95">auto</width>
@@ -670,9 +676,9 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(noweather)</visible>
 				</item>
--->
+
 				<item id="10">
-					<description>My Pictures</description>
+					<description>Weather</description>
 					<label>31017</label>
 					<icon>backdrops/summer/summer.png</icon>
 					<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
@@ -680,8 +686,9 @@
 					<onclick>Skin.SetBool(noweather)</onclick>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
+
 				<item id="24">
-					<description>My Pictures</description>
+					<description>My Scripts</description>
 					<label>31020</label>
 					<include>BackgroundVarsScripts</include>
 					<width min="95" max="95">auto</width>
@@ -689,14 +696,14 @@
 					<visible>Skin.HasSetting(scripts)</visible>
 				</item>
 				<item id="24">
-					<description>My Pictures</description>
+					<description>My Scripts</description>
 					<label2>31020</label2>
 					<include>BackgroundVarsScripts</include>
 					<width min="95" max="95">auto</width>
 					<onclick>Skin.SetBool(scripts)</onclick>
 					<visible>!Skin.HasSetting(scripts)</visible>
 				</item>
-<!--
+
 				<item id="9">
 					<label>31016</label>
 					<include>BackgroundVarsSettings</include>
@@ -743,7 +750,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(assistant)</visible>
 				</item>
--->
+
 				<item id="23">
 					<description>Sign Out</description>
 					<label>31209</label>
@@ -760,6 +767,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(signout)</visible>
 				</item>
+-->
 			</content>
 		</control>
 

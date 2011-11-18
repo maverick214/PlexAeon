@@ -4,11 +4,12 @@
 		<posy>0</posy>
 		<width>1280</width>
 		<height>720</height>
+		<fadetime>1000</fadetime>
 	</include>
 
 	<include name="Background_SingleImage">
 		<include>FullscreenDimensions</include>
-        <visible>![Control.IsVisible(87) | [Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]]</visible>
+        <visible>![Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]</visible>
 		<include>Animation_BackgroundFade</include>
 	</include>
 
@@ -19,9 +20,9 @@
 		<height>720</height>
 		<imagepath>-</imagepath>
 		<timeperimage>20000</timeperimage>
-		<fadetime>2000</fadetime>
+		<fadetime>1000</fadetime>
 		<randomize>true</randomize>
-        <visible>![Control.IsVisible(87) | [Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]]</visible>
+        <visible>![Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]</visible>
 		<animation effect="fade" start="20" end="100" time="800">Visible</animation>
 		<animation effect="fade" end="0" time="600">Hidden</animation>
 	</include>
@@ -30,7 +31,6 @@
 		<posy>0</posy>
 		<width>840</width>
 		<height>471</height>
-        <visible>!Control.IsVisible(87)</visible>
 		<include>Animation_BackgroundFade</include>		
 	</include>
 	<include name="Background_VirtualImageFolder">
@@ -42,7 +42,6 @@
 		<timeperimage>20000</timeperimage>
 		<fadetime>2000</fadetime>
 		<randomize>true</randomize>
-        <visible>!Control.IsVisible(87)</visible>
 		<include>Animation_BackgroundFade</include>			
 	</include>
 	<include name="BackgroundTimings">
@@ -169,14 +168,14 @@
 		<imagepath>backdrops/default_settings/default.png</imagepath>
 		<info>Skin.String(CustomSettingsbg)</info>
 	</include>
-
+<!--
 	<include name="BackgroundVarsScripts">
 		<icon>backdrops/default_scripts/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomScriptsbg)]</thumb>
 		<imagepath>backdrops/default_scripts/default.png</imagepath>
 		<info>Skin.String(CustomScriptsbg)</info>
 	</include>
-
+-->
 	<include name="BackgroundVarsPlayDVD">
 		<icon>backdrops/default_settings/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomPlayDVDbg)]</thumb>
@@ -190,14 +189,14 @@
 		<imagepath>backdrops/default_settings/default.png</imagepath>
 		<info>Skin.String(CustomAssistantbg)</info>
 	</include>
-
+<!--
 	<include name="BackgroundVarsSignOut">
 		<icon>backdrops/default_settings/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomSignOutbg)]</thumb>
 		<imagepath>backdrops/default_settings/default.png</imagepath>
 		<info>Skin.String(CustomSignOutbg)</info>
 	</include>
-
+-->
 	<include name="BackgroundVarsShutdown">
 		<icon>backdrops/default_shutdown/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomShutdownbg)]</thumb>
@@ -888,7 +887,7 @@
 			<visible>Container(300).HasFocus(2) + Control.IsVisible(300)</visible>
 			<visible>Skin.String(CustomMusicFolder)</visible>
 		</control>
-		
+<!--		
 		<control type="largeimage">
 			<animation effect="fade" end="100" time="600">Visible</animation>
 			<animation effect="fade" end="0" time="600">Hidden</animation>
@@ -909,7 +908,7 @@
 			<visible>Container(300).HasFocus(24) + Control.IsVisible(300)</visible>
 			<visible>Skin.String(CustomScriptsFolder)</visible>
 		</control>
-
+-->
 		<control type="multiimage">
 			<include>Background_SingleImage</include>
 			<imagepath>backdrops/default_disc</imagepath>
@@ -946,7 +945,7 @@
 			<visible>Container(300).HasFocus(21) + Control.IsVisible(300)</visible>
 			<visible>Skin.String(CustomAssistantFolder)</visible>
 		</control>
-
+<!--
 		<control type="largeimage">
 			<animation effect="fade" end="100" time="600">Visible</animation>
 			<animation effect="fade" end="0" time="600">Hidden</animation>
@@ -967,7 +966,7 @@
 			<visible>Container(300).HasFocus(23) + Control.IsVisible(300)</visible>
 			<visible>Skin.String(CustomSignOutFolder)</visible>
 		</control>
-
+-->
 		<control type="largeimage">
 			<animation effect="fade" end="100" time="600">Visible</animation>
 			<animation effect="fade" end="0" time="600">Hidden</animation>
@@ -1196,7 +1195,7 @@
 			<visible>[Container(301).HasFocus(35) + Control.IsVisible(301)] | [Container(300).HasFocus(35) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomSectionTwelvefolder)</visible>
 		</control>
-		
+<!--		
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_scripts</imagepath>
@@ -1211,7 +1210,7 @@
 			<visible>[Container(301).HasFocus(24) + Control.IsVisible(301)] | [Container(300).HasFocus(24) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomScriptsFolder)</visible>
 		</control>
-
+-->
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_movies</imagepath>
@@ -1241,7 +1240,7 @@
 			<visible>[Container(301).HasFocus(21) + Control.IsVisible(301)] | [Container(300).HasFocus(21) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomAssistantFolder)</visible>
 		</control>
-
+<!--
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_settings</imagepath>
@@ -1256,7 +1255,7 @@
 			<visible>[Container(301).HasFocus(23) + Control.IsVisible(301)] | [Container(300).HasFocus(23) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomSignOutFolder)</visible>
 		</control>
-
+-->
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_shutdown</imagepath>
