@@ -410,8 +410,9 @@
 					<height>150</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>800</fadetime>
-					<texture>$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
+					<texture>$INFO[listitem.property(fanart_image)]</texture>
 				</control>
+<!--
 				<control type="largeimage">
 					<posx>0</posx>
 					<posy>155</posy>
@@ -421,6 +422,7 @@
 					<colordiffuse>94FFFFFF</colordiffuse>
 					<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkfloor)">Conditional</animation>
 				</control>
+
 				<control type="largeimage">
 					<posx>1</posx>
 					<posy>156</posy>
@@ -439,6 +441,7 @@
 					<fadetime>800</fadetime>
 					<texture>$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
 				</control>
+-->
 			</control>
 			<!--New Poster Group-->
 			<control type ="group">
@@ -497,15 +500,14 @@
 					<texture>defaultvideobig.png</texture>
 			   		<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 				</control>
-				<control type="multiimage">
+				<control type="largeimage">
 					<posx>1</posx>
 					<posy>1</posy>
 					<width>522</width>
 					<height>293</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>800</fadetime>
-					<timeperimage>4000</timeperimage>
-					<imagepath background="true">$INFO[ListItem.Path,,extrathumbs]</imagepath>
+					<texture background="true">$INFO[listitem.property(fanart_image)]</texture>
 				</control>
 			</control>
 			<control type="group">

@@ -246,9 +246,9 @@
 					<height>111</height>
 					<aspectratio>scale</aspectratio>
 					<fadetime>400</fadetime>
-					<texture>$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
+					<texture>$INFO[listitem.property(fanart_image)]</texture>
 				</control>
-
+<!--
 				<control type="image">
 					<posx>200</posx>
 					<posy>0</posy>
@@ -267,7 +267,7 @@
 					<fadetime>400</fadetime>
 					<texture>$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
 				</control>
-
+-->
 			</control>
 
 		</control>

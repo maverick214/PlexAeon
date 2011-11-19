@@ -110,7 +110,7 @@
 					<font>Font_MultiplexPlot</font>
 				</control>				
 			</control>
-<!--
+
 			<control type="group">
 				<posx>900</posx>
 				<posy>397</posy>
@@ -118,17 +118,16 @@
 				<animation effect="fade" delay="5000" start="0" end="100" time="500" >Visible</animation>
 				<animation effect="fade" delay="5000" start="0" end="100" time="500" >WindowOpen</animation>
 
-				<control type="multiimage">	
+				<control type="largeimage">	
 					<posx>0</posx>
 					<width>352</width>
 					<height>196</height>
 					<fadetime>1300</fadetime>
-					<timeperimage>5000</timeperimage>
-					<imagepath diffuse="list/list_episodeicon_mask.png" background="true">$INFO[ListItem.Path,,extrathumbs]</imagepath>		
+					<imagepath diffuse="list/list_episodeicon_mask.png" background="true">$INFO[listitem.property(fanart_image)]</imagepath>		
 					<animation effect="fade" delay="700" start="0" end="100" time="500" >WindowOpen</animation>
 				</control>
 			</control>			
--->
+
 			<control type="group">
 				<posx>35</posx>
 				<posy>397</posy>

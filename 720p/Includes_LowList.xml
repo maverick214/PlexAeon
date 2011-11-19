@@ -1742,15 +1742,14 @@
 			<description>SLIDESHOW detail panel</description>
 			<include>ListDetail_PanelVars</include>
 			<visible>Control.IsVisible(551) + Container.Content(movies) + [Control.HasFocus(7714) | !ControlGroup(7003).HasFocus() + Skin.HasSetting(moviegallerypanelon) + !Control.IsVisible(7898)]</visible>
-			<control type="multiimage">
+			<control type="largeimage">
 				<posx>5</posx>
 				<posy>10</posy>
 				<width>360</width>
 				<height>196</height>
 				<fadetime>800</fadetime>
 				<aspectratio>scale</aspectratio>
-				<timeperimage>6000</timeperimage>
-				<imagepath fallback="common/black.png" background="true">$INFO[ListItem.Path,,extrathumbs]</imagepath>
+				<texture fallback="common/black.png" background="true">$INFO[listitem.property(fanart_image)]</texture>
 				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
 				<include>Animation_BackgroundFade</include>
 			</control>
