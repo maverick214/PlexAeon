@@ -6042,15 +6042,15 @@
 	            <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 	            <animation effect="rotatey" center="-90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-7).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6060,15 +6060,15 @@
 	            <posx>100</posx>
 	            <animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-6).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6078,15 +6078,15 @@
 	            <posx>190</posx>
 	            <animation effect="rotatey" center="90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-5).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6096,15 +6096,15 @@
 	            <posx>280</posx>
 	            <animation effect="rotatey" center="180" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-4).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6114,15 +6114,15 @@
 	            <posx>370</posx>
 	            <animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-3).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6132,15 +6132,15 @@
 	            <posx>460</posx>
 	            <animation effect="rotatey" center="360" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-2).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6152,24 +6152,24 @@
 	            <animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
 	            <animation effect="rotatey" center="1470" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(6).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(6).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(6).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6180,24 +6180,24 @@
 	            <posx>1000</posx>
 	            <animation effect="rotatey" center="1380" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(5).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(5).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(5).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6208,24 +6208,24 @@
 	            <posx>910</posx>
 	            <animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(4).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(4).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(4).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6236,24 +6236,24 @@
 	            <posx>820</posx>
 	            <animation effect="rotatey" center="1200" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(3).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(3).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(3).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6264,24 +6264,24 @@
 	            <posx>730</posx>
 	            <animation effect="rotatey" center="1110" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(2).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(2).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(2).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6292,24 +6292,24 @@
 	            <posx>640</posx>
 	            <animation effect="rotatey" center="1020" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(1).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(1).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(1).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6329,20 +6329,20 @@
 	                        <include>MovieFlowThumb</include>
 	                        <info>ListItem(0).Icon</info>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlayAngled</include>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6358,20 +6358,20 @@
 	                        <include>MovieFlowThumb</include>
 	                        <info>ListItem(-1).Icon</info>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlayAngled</include>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(-1).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(-1).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6390,24 +6390,24 @@
 	            <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 	            <animation effect="rotatey" center="1380" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(7).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(7).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(7).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6418,24 +6418,24 @@
 	            <posx>910</posx>
 	            <animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(6).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(6).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(6).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6446,24 +6446,24 @@
 	            <posx>820</posx>
 	            <animation effect="rotatey" center="1200" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(5).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(5).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(5).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6474,24 +6474,24 @@
 	            <posx>730</posx>
 	            <animation effect="rotatey" center="1110" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(4).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(4).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(4).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6502,24 +6502,24 @@
 	            <posx>640</posx>
 	            <animation effect="rotatey" center="1020" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(3).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(3).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(3).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6530,24 +6530,24 @@
 	            <posx>550</posx>
 	            <animation effect="rotatey" center="930" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(2).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(2).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(2).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6560,15 +6560,15 @@
 	            <animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
 	            <animation effect="rotatey" center="-180" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-6).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6578,15 +6578,15 @@
 	            <posx>10</posx>
 	            <animation effect="rotatey" center="-90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-5).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6596,15 +6596,15 @@
 	            <posx>100</posx>
 	            <animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-4).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6614,15 +6614,15 @@
 	            <posx>190</posx>
 	            <animation effect="rotatey" center="90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-3).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6632,15 +6632,15 @@
 	            <posx>280</posx>
 	            <animation effect="rotatey" center="180" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-2).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6650,15 +6650,15 @@
 	            <posx>370</posx>
 	            <animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-1).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6673,24 +6673,24 @@
 	                <animation effect="rotatey" center="360" start="0" end="55" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
 	                <animation effect="rotatey" center="360" start="-55" end="-55" time="0" condition="true">Conditional</animation>
 	                <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                        <include>MovieFlowThumb</include>
 	                        <info>ListItem(0).Icon</info>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlay</include>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6702,24 +6702,24 @@
 	                <visible>Container.OnPrevious</visible>
 	                <animation effect="rotatey" center="885" start="0" end="55" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
 	                <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                        <include>MovieFlowThumb</include>
 	                        <info>ListItem(1).Icon</info>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlay</include>
 	                    </control>
-	                    <control type="image">
+	                    <control type="largeimage">
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6744,15 +6744,15 @@
 					<effect type="slide" start="0" end="-685" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-6).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6766,15 +6766,15 @@
 					<effect type="slide" start="0" end="-577" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-5).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6788,15 +6788,15 @@
 					<effect type="slide" start="0" end="-469" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-4).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6810,15 +6810,15 @@
 					<effect type="slide" start="0" end="-362" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-3).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6832,15 +6832,15 @@
 					<effect type="slide" start="0" end="-256" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-2).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6854,15 +6854,15 @@
 					<effect type="slide" start="0" end="-151" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(-1).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
@@ -6876,24 +6876,24 @@
 					<effect type="slide" start="0" end="685" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(6).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(6).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(6).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6908,24 +6908,24 @@
 					<effect type="slide" start="0" end="577" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(5).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(5).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(5).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6940,24 +6940,24 @@
 					<effect type="slide" start="0" end="469" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(4).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(4).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(4).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6972,24 +6972,24 @@
 					<effect type="slide" start="0" end="362" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(3).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(3).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(3).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7004,24 +7004,24 @@
 					<effect type="slide" start="0" end="256" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(2).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(2).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(2).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7036,24 +7036,24 @@
 					<effect type="slide" start="0" end="151" time="800" tween="cubic" easing="inout" />
 				</animation>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumb</include>
 	                    <info>ListItem(1).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(1).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(1).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7063,24 +7063,24 @@
 	        <control type="group">
 	            <posx>505</posx>
 	            <control type="group">
-                    <control type="image">
+                    <control type="largeimage">
 	                    <include>MovieFlowThumbMain</include>
 	                    <info>ListItem(0).Icon</info>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlay</include>
 	                </control>
-	                <control type="image">
+	                <control type="largeimage">
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="image">
+				    <control type="largeimage">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
