@@ -15,7 +15,7 @@
           <onright>60</onright>
           <onup>512</onup>
           <ondown>512</ondown>
-<!--          <preloaditems>4</preloaditems>  -->
+	      <preloaditems>4</preloaditems> 
           <scrolltime>200</scrolltime>
           <viewtype label="$LOCALIZE[31283]">icon</viewtype>
           <pagecontrol>60</pagecontrol>

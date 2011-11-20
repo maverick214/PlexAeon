@@ -973,7 +973,7 @@
 						<include>ListLabel_Detail_LowSmall_Low</include>
 						<include>lowlistdetailcolornofocus</include>
 						<label>$INFO[ListItem.Property(unwatchedepisodes)]</label>
-						<visible>Container.Content(tvshows)</visible>
+						<visible>Container.Content(tvshows) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
 					</control>
 
 					<control type="label">
@@ -981,7 +981,7 @@
 						<include>ListLabel_Detail_LowFull_Low</include>
 						<include>lowlistdetailcolornofocus</include>
 						<label>$INFO[ListItem.Property(unwatchedepisodes)] $LOCALIZE[20360]</label>
-						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Title)</visible>
+						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
 					</control>
 
 					<control type="label">
@@ -1065,7 +1065,7 @@
 						<include>ListLabel_Detail_LowSmall_Low</include>
 						<include>listcolorfocus</include>
 						<label>$INFO[ListItem.Property(unwatchedepisodes)]</label>
-						<visible>Container.Content(tvshows)</visible>
+						<visible>Container.Content(tvshows) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
 					</control>
 
 					<control type="label">
@@ -1073,7 +1073,7 @@
 						<include>ListLabel_Detail_LowFull_Low</include>
 						<include>listcolorfocus</include>
 						<label>$INFO[ListItem.Property(unwatchedepisodes)] $LOCALIZE[20360]</label>
-						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Title)</visible>
+						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
 					</control>
 
 					<control type="label">
