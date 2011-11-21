@@ -956,12 +956,21 @@
 	</include>
 
 	<include name="Furniture_HomeNowPlayingYes">
+	<control type="group">
+		<posy>-400</posy>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" delay="900" time="400" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" delay="0" time="200" />
+			</animation>
+		<visible>![Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003)]</visible>
 		<control type="group">
 			<animation type="Visible" reversible="false">
 				<effect type="fade" start="0" end="100" delay="14500" time="400" />
 			</animation>
 			<visible>!Skin.HasSetting(homevis) + Player.HasVideo</visible>
-			<control type="image">
+			<control type="largeimage">
 				<include>FullscreenDimensions</include>
 				<texture>common/black.png</texture>
 				<visible>!Window.IsVisible(101)</visible>
@@ -978,7 +987,7 @@
 			</control>
 		</control>
 -->
-		<control type="image">
+		<control type="largeimage">
 			<posx>0</posx>
 			<posy>240</posy>
 			<width>1280</width>
@@ -1074,6 +1083,7 @@
 			<include>Animation_VisibleChange200</include>
 			<include>Furniture_HomeNowPlayingObjects</include>
 			<include>Furniture_HomeNowPlayingInfo</include>
+		</control>
 		</control>
 	</include>
 	<include name="Furniture_NowPlayingWidget">

@@ -141,10 +141,10 @@
 				</control>
 
 				<control type="button" id="808">
-					<description>Restart</description>
+					<description>Sleep Mac</description>
 					<label>31207</label>
 					<include>Objects_ContextMenuButton</include>
-					<onclick>RestartApp</onclick>
+					<onclick>Plex.Suspend()</onclick>
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
 				</control>
@@ -153,7 +153,7 @@
 					<label>31202</label>
 					<include>Objects_ContextMenuButton</include>
 					<onclick>Dialog.Close(1111)</onclick>
-					<onclick>XBMC.ActivateWindow(605)</onclick>
+					<onclick>Plex.Powerdown()</onclick>
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
 				</control>
@@ -178,7 +178,7 @@
 				</control>
 
 				<control type="button" id="809">
-					<description>Shutdown</description>
+					<description>Quit Plex</description>
 					<label>31208</label>
 					<include>Objects_ContextMenuButton</include>
 					<onclick>Shutdown</onclick>

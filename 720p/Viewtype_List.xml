@@ -377,6 +377,7 @@
 		<posy>72</posy>
 		<orientation>horizontal</orientation>
 		<itemgap>12</itemgap>
+		<width>720</width>
 		<visible>Control.IsVisible(50)</visible>
 			<control type="label">
 				<width min="0" max="680">auto</width>
@@ -426,11 +427,12 @@
 				<include>listcolorfocus</include>	
 				<label>([UPPERCASE]$LOCALIZE[31062] $INFO[ListItem.Season], $LOCALIZE[31063] $INFO[ListItem.Episode])[/UPPERCASE]</label>
 				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
+		<scroll>true</scroll>
 			</control>
 
 			<control type="label">
 				<posy>-15</posy>
-				<width min="0" max="60">auto</width>
+				<width min="0" max="70">auto</width>
 				<height>47</height>
 				<font>Font_MediaWindowTitleMenu</font>
 				<aligny>center</aligny>

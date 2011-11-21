@@ -178,7 +178,7 @@
 					<include>Objects_ContextMenuButton</include>
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
-					<onclick>Shutdown</onclick>
+					<onclick>Plex.Powerdown()</onclick>
 				</control>
 
 			</control>

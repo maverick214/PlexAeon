@@ -9,7 +9,7 @@
 		  <viewtype label="Info Wall">icon</viewtype>
           <posx>35</posx>
           <posy>100</posy>
-          <width>760</width>
+          <width>800</width>
           <height>570</height>
           <onleft>7000</onleft>
           <onright>60</onright>
@@ -64,7 +64,101 @@
               </control>
           </focusedlayout>
  -->
-          <itemlayout height="190" width="126" condition="Container.Content(tvshows) | Container.Content(seasons) | [!Skin.HasSetting(usecasesinfowall) + Container.Content(movies)]">
+          <itemlayout height="95" width="400" condition="Container.Content(tvshows) + Skin.HasSetting(InfoWallBanners)">
+            <control type="largeimage">
+              <posx>-2</posx>
+              <posy>3</posy>
+              <width>370</width>
+              <height>130</height>
+              <aspectratio scalediffuse="false">stretch</aspectratio>
+              <fadetime>100</fadetime>
+              <texture background="true">wall/boxes/wall_movie_nfborder.png</texture>
+              <visible>Skin.HasSetting(useclearcasesinfowall)</visible>
+            </control>
+            <control type="largeimage">
+              <posx>0</posx>
+              <posy>-5</posy>
+              <width>370</width>
+              <height>130</height>
+              <aspectratio scalediffuse="false">keep</aspectratio>
+              <fadetime>100</fadetime>
+             <texture background="true" diffuse="wall/wall_movie_mask.png">$INFO[ListItem.Banner]</texture>
+ 						<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
+           </control>
+			<control type="largeimage">
+	          <posx>73</posx>
+   	          <posy>4</posy>
+   	          <width>45</width>
+   	          <height>45</height>
+   	          <fadetime>100</fadetime>
+		      <visible>Skin.HasSetting(BlueDot)</visible>
+			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+			  <info>ListItem.Overlay</info>
+			</control>
+			<control type="largeimage">
+              <posx>327</posx>
+              <posy>25</posy>
+              <width>45</width>
+              <height>45</height>
+              <fadetime>100</fadetime>
+			  <visible>!Skin.HasSetting(BlueDot)</visible>
+			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+			  <texture>NewLabel/$INFO[ListItem.overlay]</texture>
+		   </control>
+          </itemlayout>
+          <focusedlayout height="95" width="400" condition="Container.Content(tvshows) + Skin.HasSetting(InfoWallBanners)">
+            <control type="group">
+<!--
+              <control type="largeimage">
+                <posx>-5</posx>
+                <posy>25</posy>
+     	        <width>385</width>
+          	    <height>70</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <fadetime>100</fadetime>
+                <texture background="true">wall/wall_tv_fborder.png</texture>
+        	    <animation effect="zoom" center="auto" start="100" end="113" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+              </control>
+ 
+-->
+              <control type="largeimage">
+                <posx>0</posx>
+                <posy>-5</posy>
+     	        <width>370</width>
+          	    <height>130</height>
+                 <aspectratio scalediffuse="false">keep</aspectratio>
+                <fadetime>100</fadetime>
+                <texture>$INFO[ListItem.Banner]</texture>
+        	    <animation effect="zoom" center="auto" start="100" end="113" time="600" easing="out" tween="back" reversible="false">Focus</animation>
+	<!--			<bordertexture border="-18">wall/boxes/bannerborder.png</bordertexture> -->
+              </control>
+
+			<control type="largeimage">
+	          <posx>73</posx>
+   	          <posy>4</posy>
+   	          <width>45</width>
+   	          <height>45</height>
+   	          <fadetime>100</fadetime>
+        	    <animation effect="zoom" center="auto" start="100" end="110" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+		      <visible>Skin.HasSetting(BlueDot)</visible>
+			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+			  <info>ListItem.Overlay</info>
+			</control>
+			<control type="largeimage">
+              <posx>327</posx>
+              <posy>25</posy>
+              <width>45</width>
+              <height>45</height>
+              <fadetime>100</fadetime>
+        	    <animation effect="zoom" center="220,50" start="100" end="116" time="600" easing="out" tween="back" reversible="false">Focus</animation>
+			  <visible>!Skin.HasSetting(BlueDot)</visible>
+			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+			  <texture>NewLabel/$INFO[ListItem.overlay]</texture>
+		   </control>
+            </control>
+          </focusedlayout>
+
+          <itemlayout height="190" width="126" condition="Container.Content(seasons) | [!Skin.HasSetting(usecasesinfowall) + Container.Content(movies)] | [Container.Content(tvshows) + !Skin.HasSetting(InfoWallBanners)]">
             <control type="largeimage">
               <posx>-2</posx>
               <posy>3</posy>
@@ -134,7 +228,7 @@
 			  <texture>NewLabel/$INFO[ListItem.overlay]</texture>
 		   </control>
           </itemlayout>
-          <focusedlayout height="190" width="126" condition="Container.Content(tvshows) | Container.Content(seasons) | [!Skin.HasSetting(usecasesinfowall) + Container.Content(movies)]">
+          <focusedlayout height="190" width="126" condition="Container.Content(seasons) | [!Skin.HasSetting(usecasesinfowall) + Container.Content(movies)] | [Container.Content(tvshows) + !Skin.HasSetting(InfoWallBanners)]">
             <control type="group">
               <control type="largeimage">
                 <posx>-2</posx>

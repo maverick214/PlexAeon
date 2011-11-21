@@ -2813,6 +2813,15 @@
 		</control>
 	</include>
 
+	<include name="MediaMenuButton_InfoWallBanners">
+		<control type="radiobutton" id="70045">
+			<include>MediaMenuButton</include>
+			<label>Use Banners</label>
+			<onclick>Skin.ToggleSetting(InfoWallBanners)</onclick>
+			<selected>Skin.HasSetting(InfoWallBanners)</selected>
+			<visible>Container.Content(TVShows) + Control.IsVisible(512)</visible>
+		</control>
+	</include>
 <!--
 		<control type="button" id="700044">
 			<label>31016</label>
@@ -3492,6 +3501,7 @@
 				<include>MediaMenuButton_movieratingtext</include>
 				<include>MediaMenuButton_HDiconOff</include> 
 				<include>MediaMenuButton_usecasesinfowall</include> 
+				<include>MediaMenuButton_InfoWallBanners</include> 
 		<!--
 				<include>MediaMenuButton_Files</include> 
 				<include>MediaMenuButton_Setup</include> -->

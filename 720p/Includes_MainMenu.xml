@@ -164,7 +164,7 @@
 					<description>Shutdown</description>
 					<include>BackgroundVarsShutdown</include>
 					<label>31207</label>
-					<onclick>Plex.SleepSystem</onclick>
+					<onclick>Plex.Suspend()</onclick>
 					<visible>!Skin.HasSetting(noshutdown) + Skin.HasSetting(SleepSub)</visible>
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
