@@ -192,6 +192,13 @@
             <visible>Skin.HasSetting(CustomFanartSlideshow) + Skin.HasSetting(FanartSlideshow)</visible>
           </control>
 
+			<control type="radiobutton" id="503">
+				<include>Objects_SettingsDefaultRadioButton</include>
+				<label>Latest/In Progress Hidden until Pressing Down</label>
+				<onclick>Skin.ToggleSetting(OnDownRecentlyAdded)</onclick>
+				<selected>Skin.HasSetting(OnDownRecentlyAdded)</selected>
+			</control>
+
 			<control type="radiobutton" id="505">
 				<include>Objects_SettingsDefaultRadioButton</include>
 				<label>Latest/In Progress popup OFF for all sections</label>
