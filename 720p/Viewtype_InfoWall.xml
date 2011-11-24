@@ -86,8 +86,8 @@
  						<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
            </control>
 			<control type="largeimage">
-	          <posx>73</posx>
-   	          <posy>4</posy>
+              <posx>327</posx>
+              <posy>25</posy>
    	          <width>45</width>
    	          <height>45</height>
    	          <fadetime>100</fadetime>
@@ -134,12 +134,12 @@
               </control>
 
 			<control type="largeimage">
-	          <posx>73</posx>
-   	          <posy>4</posy>
+              <posx>327</posx>
+              <posy>25</posy>
    	          <width>45</width>
    	          <height>45</height>
    	          <fadetime>100</fadetime>
-        	    <animation effect="zoom" center="auto" start="100" end="110" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+        	    <animation effect="zoom" center="220,50" start="100" end="116" time="600" easing="out" tween="back" reversible="false">Focus</animation>
 		      <visible>Skin.HasSetting(BlueDot)</visible>
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
