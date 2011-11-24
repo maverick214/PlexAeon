@@ -366,16 +366,15 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
-<!--
+
 				<item id="24">
-					<label>31020</label>
-					<include>BackgroundVarsScripts</include>
-					<onclick>Skin.SetString(custom,CustomScriptsfolder)</onclick>
+					<label>Queue</label>
+					<include>BackgroundVarsQueue</include>
+					<onclick>Skin.SetString(custom,CustomQueuefolder)</onclick>
 					<onclick>SetFocus(92)</onclick>
 					<width min="95" max="95">auto</width>
-					<visible>Skin.HasSetting(scripts)</visible>
 				</item>
--->
+
 				<item id="9">
 					<include>BackgroundVarsSettings</include>
 					<label>31016</label>
@@ -582,70 +581,70 @@
 
 			</focusedlayout>
 			<content>
-				<item id="1">
+				<item id="2">
 					<label>$LOCALIZE[31972]</label>
 					<include>BackgroundVarsMusic</include>
 					<onclick>Skin.SetBool(nomusic)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
-				<item id="1">
+				<item id="2">
 					<label2>$LOCALIZE[31972]</label2>
 					<include>BackgroundVarsMusic</include>
 					<onclick>Skin.Reset(nomusic)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(nomusic)</visible>
 				</item>
-				<item id="2">
+				<item id="12">
 					<label>$LOCALIZE[31952]</label>
 					<include>BackgroundVarsGames</include>
 					<onclick>Skin.SetBool(NoPlexOnline)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(NoPlexOnline)</visible>
 				</item>
-				<item id="2">
+				<item id="12">
 					<label2>$LOCALIZE[31952]</label2>
 					<include>BackgroundVarsGames</include>
 					<onclick>Skin.Reset(NoPlexOnline)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(NoPlexOnline)</visible>
 				</item>
-				<item id="5">
+				<item id="3">
 					<label>$LOCALIZE[31973]</label>
 					<include>BackgroundVarsPictures</include>
 					<onclick>Skin.SetBool(nopictures)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
-				<item id="5">
+				<item id="3">
 					<label2>$LOCALIZE[31973]</label2>
 					<include>BackgroundVarsPictures</include>
 					<onclick>Skin.Reset(nopictures)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(nopictures)</visible>
 				</item>
-				<item id="6">
+				<item id="4">
 					<label>31144</label>
 					<include>BackgroundVarsPrograms</include>
 					<onclick>Skin.SetBool(programs)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(programs)</visible>
 				</item>
-				<item id="6">
+				<item id="4">
 					<label2>31144</label2>
 					<include>BackgroundVarsPrograms</include>
 					<onclick>Skin.Reset(programs)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(programs)</visible>
 				</item>
-				<item id="7">
+				<item id="11">
 					<description>Search</description>
 					<label>$LOCALIZE[137]</label>
 					<include>BackgroundVarsSearch</include>
 					<onclick>Skin.SetBool(noSearch)</onclick>
 					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>
-				<item id="7">
+				<item id="11">
 					<description>Search</description>
 					<label2>$LOCALIZE[137]</label2>
 					<include>BackgroundVarssearch</include>
@@ -653,14 +652,14 @@
 					<visible>Skin.HasSetting(noSearch)</visible>
 				</item>
 
-				<item id="8">
+				<item id="1">
 					<label>$LOCALIZE[31971]</label>
 					<include>BackgroundVarsVideo</include>
 					<onclick>Skin.SetBool(novideos)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
-				<item id="8">
+				<item id="1">
 					<label2>$LOCALIZE[31971]</label2>
 					<include>BackgroundVarsVideo</include>
 					<onclick>Skin.Reset(novideos)</onclick>

@@ -168,14 +168,14 @@
 		<imagepath>backdrops/default_settings/default.png</imagepath>
 		<info>Skin.String(CustomSettingsbg)</info>
 	</include>
-<!--
-	<include name="BackgroundVarsScripts">
-		<icon>backdrops/default_scripts/default.png</icon>
-		<thumb>$INFO[Skin.String(CustomScriptsbg)]</thumb>
-		<imagepath>backdrops/default_scripts/default.png</imagepath>
-		<info>Skin.String(CustomScriptsbg)</info>
+
+	<include name="BackgroundVarsQueue">
+		<icon>backdrops/default_queue/default.jpg</icon>
+		<thumb>$INFO[Skin.String(Customqueuebg)]</thumb>
+		<imagepath>backdrops/default_queue/default.jpg</imagepath>
+		<info>Skin.String(CustomQueuebg)</info>
 	</include>
--->
+
 	<include name="BackgroundVarsPlayDVD">
 		<icon>backdrops/default_settings/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomPlayDVDbg)]</thumb>
@@ -791,6 +791,27 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture>backdrops/default_Queue/default.jpg</texture>
+			<info>Skin.String(CustomQueue)</info>
+            <visible>substring(Container(300).ListItem.Label,Queue) + Control.IsVisible(300)]</visible>
+            <visible>!Skin.String(CustomQueueFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomQueueFolder)</info>
+			<randomize>true</randomize>
+            <visible>substring(Container(300).ListItem.Label,Queue) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomQueueFolder)</visible>
+		</control>
+
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
 			<texture>backdrops/default_games/games.jpg</texture>
 			<info>Skin.String(CustomGames)</info>
 			<visible>Container(300).HasFocus(12) + Control.IsVisible(300)</visible>
@@ -1114,6 +1135,22 @@
 			<visible>[Container(301).HasFocus(2) + Control.IsVisible(301)] | [Container(300).HasFocus(2) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomMusicFolder)</visible>
 		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_Queue</imagepath>
+			<info>Skin.String(CustomQueue)</info>
+            <visible>[substring(Container(300).ListItem.Label,Queue) + Control.IsVisible(300)] | [substring(Container(301).ListItem.Label,Queue) + Control.IsVisible(301)]</visible>
+            <visible>!Skin.String(CustomQueueFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomQueueFolder)</info>
+            <visible>[substring(Container(300).ListItem.Label,Queue) + Control.IsVisible(300)] | [substring(Container(301).ListItem.Label,Queue) + Control.IsVisible(301)]</visible>
+			<visible>Skin.String(CustomQueueFolder)</visible>
+		</control>
+
 <!--
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>

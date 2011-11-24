@@ -358,7 +358,7 @@
 				<control type="button" id="45">
 					<include>Submenu_Button</include>
 					<label>31213</label>
-					<onclick>XBMC.ShutDownSystem()</onclick>
+					<onclick>Plex.Powerdown()</onclick>
 				</control>
 				<control type="button" id="46">
 					<include>Submenu_Button</include>
