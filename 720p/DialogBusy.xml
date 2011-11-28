@@ -1,10 +1,10 @@
+<?xml version="1.0"?>
 <window id="136">
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
-<!--	<include>Animation_DialogPopup</include> -->
 	<controls>
 <!--
 		<control type="group" id="901">

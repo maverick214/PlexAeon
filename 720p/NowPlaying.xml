@@ -587,7 +587,7 @@
 	
 		
 
-		<control type="image">
+		<control type="largeimage">
 			<description>Cover image</description>
 			<posy>-180</posy>
 			<width>270</width>
@@ -596,7 +596,7 @@
 			<aspectratio align="bottom">keep</aspectratio>
 		</control>
 		
-		<control type="image">
+		<control type="largeimage">
 			<description>Cover image overlay</description>
 			<width>270</width>
 			<height>300</height>
@@ -619,7 +619,7 @@
 					<posy>54</posy>
 					<width>125</width>
 					<height>25</height>
-					<label>[COLOR FF79ba6c]$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+					<label>[COLOR FF79ba6c]$INFO[MusicPlayer.Time]/$INFO[MusicPlayer.Duration][/COLOR]</label>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 				<control type="label">
