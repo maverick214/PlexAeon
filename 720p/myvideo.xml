@@ -18,11 +18,11 @@
 			<texture>$INFO[listitem.property(fanart_image)]</texture>
 		</control>
 	</control>
-
 	<include>Furniture_HomeNowPlaying</include>
 	<include condition="!Skin.HasSetting(TotalsPanelOff)">Furniture_Navigation</include>
 	<include>Furniture_MediaPanel</include>
 	<include>Viewtype_Poster_Half</include>
+	<include>Viewtype_List</include>
 	<include condition="!Skin.HasSetting(InfoWallOff)">ViewType_InfoWall</include>
 	<include condition="!Skin.HasSetting(CoverflowOff)">Viewtype_Coverflow</include>
 	<include condition="!Skin.HasSetting(WallOff)">Viewtype_Wall</include> 
@@ -34,7 +34,6 @@
 	<include condition="!Skin.HasSetting(OldMultiplexOff)">Viewtype_MultiplexOld</include>
 <!--	<include condition="!Skin.HasSetting(Anoobie2Off)">Viewtype_Anoobie2</include>  -->
 	<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
-	<include>Viewtype_List</include>
 	<include>NewMediaMenu</include>
 	<include>Furniture_DarkGradient</include>
 	<include>ScrollOffsetLabel</include>

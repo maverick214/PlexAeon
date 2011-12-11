@@ -20,6 +20,7 @@
 			<onfocus>Skin.SetBool(DefaultsSet)</onfocus>
 			<onfocus>Skin.SetBool(cListmovieshowinfo)</onfocus>
 			<onfocus>Skin.SetBool(usecasesinfowall)</onfocus>
+			<onfocus>Skin.SetBool(ForceLowList)</onfocus>
 			<onfocus>ReloadSkin()</onfocus>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>

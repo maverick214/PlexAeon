@@ -2586,7 +2586,7 @@
 			<onclick>Skin.ToggleSetting(dvdcase)</onclick>
 			<selected>Skin.HasSetting(dvdcase)</selected>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(551)</visible>
+			<visible>[Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(551)] + ![Container.Content(plugins) | Container.Content(plugincontent)]</visible>
 			</control>
 	</include>
 	<include name="MediaMenuButton_WallGrid">
@@ -2713,16 +2713,6 @@
 			<visible>[Skin.HasSetting(clearfloor) | [!Skin.HasSetting(LightFloor) + !Skin.HasSetting(DarkFloor) + !Skin.HasSetting(clearfloor)]] + [[Control.IsVisible(550) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(57)] | [Control.IsVisible(53) + Skin.HasSetting(newwall)]]</visible>
 		</control>
 	</include>
-<!--
-	<include name="MediaMenuButton_Watched">
-		<control type="radiobutton" id="14">
-			<description>Watched Toggle Button</description>
-				<label>$LOCALIZE[31058]</label>
-			<include>MediaMenuButton</include>
-			<visible>[Container.Content(movies) + !Skin.HasSetting(nomenumoviewatched)] | [[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(nomenutvwatched)]</visible>
-		</control>
-	</include>
--->
 	<include name="MediaMenuButton_movieratingtext">
 		<control type="radiobutton" id="700049">
 			<include>MediaMenuButton</include>
@@ -2732,36 +2722,6 @@
 			<visible>Container.Content(movies) + !Control.IsVisible(512)</visible>
 		</control>
 	</include>
-<!--
-	<include name="MediaMenuButton_Filter">
-		<control type="button" id="19">
-			<label>587</label>
-			<include>MediaMenuButton</include>
-			<visible>Window.IsActive(myvideofiles) | Window.IsActive(502)</visible>
-		</control>
-	</include>
-
-	<include name="MediaMenuButton_Files">
-		<control type="button" id="11">
-			<label>31057</label>
-			<include>MediaMenuButton</include>
-			<onclick>XBMC.ReplaceWindow(MyVideoFiles)</onclick>
-			<visible>!Skin.HasSetting(nomenufiles) + Window.IsActive(myvideofiles)</visible>
-		</control>
-		<control type="button" id="700049">
-			<label>31057</label>
-			<include>MediaMenuButton</include>
-			<onclick>XBMC.ReplaceWindow(MyMusicFiles)</onclick>
-			<visible>!Skin.HasSetting(nomenufiles) + Window.IsActive(502)</visible>
-		</control>
-		<control type="button" id="700050">
-			<label>31068</label>
-			<include>MediaMenuButton</include>
-			<onclick>XBMC.ReplaceWindow(MyMusicLibrary)</onclick>
-			<visible>!Skin.HasSetting(nomenufiles) + Window.IsActive(501)</visible>
-		</control>
-	</include>
--->
 	<include name="MediaMenuButton_Playlist">
 		<control type="togglebutton" id="20">
 			<label>ORDER: NORMAL</label>
@@ -2822,27 +2782,16 @@
 			<visible>Container.Content(TVShows) + Control.IsVisible(512)</visible>
 		</control>
 	</include>
-<!--
-		<control type="button" id="700044">
-			<label>31016</label>
+	<include name="MediaMenuButton_ForceLowList">
+		<control type="radiobutton" id="700046">
+			<label>FORCE LOW LIST</label>
 			<include>MediaMenuButton</include>
-			<onclick>XBMC.ActivateWindow(PicturesSettings)</onclick>
-			<visible>!Skin.HasSetting(nomenusettings) + Window.IsActive(2)</visible>
-		</control>
-		<control type="button" id="700045">
-			<label>31016</label>
-			<include>MediaMenuButton</include>
-			<onclick>XBMC.ActivateWindow(ProgramsSettings)</onclick>
-			<visible>!Skin.HasSetting(nomenusettings) + Window.IsActive(1)</visible>
-		</control>
-		<control type="button" id="700046">
-			<label>31016</label>
-			<include>MediaMenuButton</include>
-			<onclick>XBMC.ActivateWindow(MusicSettings)</onclick>
-			<visible>!Skin.HasSetting(nomenusettings) + [Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(500)]</visible>
+			<onclick>Skin.ToggleSetting(ForceLowList)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<selected>Skin.HasSetting(ForceLowList)</selected>
+			<visible>[Container.Content(plugins) | Container.Content(plugincontent)] + Window.IsVisible(24)</visible>
 		</control>
 	</include>
--->
 	<include name="MediaMenuButton_MediaDebug">
 		<control type="button" id="700047">
 			<label>31607</label>
@@ -3488,6 +3437,7 @@
 				<include>MediaMenuButton_PanelDensity</include>
 				<include>MediaMenuButton_PanelDark</include>
 				<include>MediaMenuButton_DVDCases</include>
+				<include>MediaMenuButton_ForceLowList</include> 
 				<include>MediaMenuButton_WallInfo</include> 
 				<include>MediaMenuButton_Overlay</include>
 				<include>WatchedIcon</include>

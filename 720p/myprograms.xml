@@ -1,22 +1,26 @@
 <window id="1">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<views>50,551</views>
 	<controls>
 <!--		<control type="multiimage">
 			<include>BackgroundVarsGlobal</include>
 			<include>BackgroundVarsGames</include>
 		</control>
 -->
+    	<include>Curtain</include>    
+	<control type="group">
+		<visible>!Skin.HasSetting(curtains)</visible>
 		<control type="largeimage">
 			<include>FullscreenDimensions</include>
-			<visible>!Skin.HasSetting(curtains) + ![[Container.Content(movies) | Container.Content(tvshows)] + [Container().OnNext | Container().OnPrevious]]</visible>
 			<animation effect="zoom" start="110" end="130" center="auto" time="30000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
 			<animation effect="slide" start="-10,-10" end="20,20" time="14000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
 			<animation effect="rotate" center="360,640" start="-2" end="2" time="22000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<animation effect="fade" start="40" end="40" condition="Skin.HasSetting(DimFanart)">Conditional</animation>
+			<fadetime>1000</fadetime>
 			<texture>$INFO[listitem.property(fanart_image)]</texture>
-			<animation effect="fade" start="10" end="70" time="850">WindowOpen</animation>	
 		</control>
-    	<include>Curtain</include>    
+	</control>
 		
 		<include>Furniture_HomeNowPlaying</include>
 		<include>Furniture_WallBackground</include>
@@ -25,7 +29,7 @@
 		<include>Furniture_Time</include>
 		<include>Furniture_MediaPanel</include>
 		<include>Furniture_WallTime</include>
-
+		<include>Viewtype_List_Low</include>
 		<include>Viewtype_List</include>
 <!--
 		<include>Viewtype_Wall</include>

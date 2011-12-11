@@ -312,7 +312,7 @@
 <include name="LowList_PosterMediaIcons">
 	<control type="group">
 		<include>ListIcon_PosterIconGroup</include>
-		<visible>!Container.Content(episodes) + !Window.IsActive(2) + ![Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)] + ![Window.IsActive(24) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
+		<visible>!Container.Content(episodes) + !Window.IsActive(2) + !Window.IsActive(1) + ![Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)] + ![Window.IsActive(24) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
 		<control type="largeimage">
 			<description>DVD Case Frame</description>
 			<include>LowList_DVDCaseVars</include>
@@ -518,6 +518,9 @@
 </include>
 <!-- Episode Media Icons -->
 <include name="LowList_EpisodeMediaIcons">
+
+
+		<!-- Plugin Content -->
 	<control type="group">
 		<include>ListIcon_EpisodeIconGroup</include>
 		<animation type="Visible">
@@ -526,7 +529,39 @@
 		</animation>
 		<animation effect="fade" time="500" start="100" end="0" condition="[Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-10,0" time="300" condition="Control.HasFocus(61)">Conditional</animation>
-		<visible>[Container.Content(episodes) | Window.IsActive(2) | [Window.IsActive(24) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]] + ![Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]</visible>
+		<visible>Container.Content(plugincontent) | Container.Content(plugins)</visible>
+		<control type="image">
+			<posx>-5</posx>
+			<posy>-100</posy>
+			<width>319</width>
+			<height>379</height>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<fadetime>200</fadetime>
+			<info>ListItem.Thumb</info>
+		</control>
+		<control type="image">
+			<posx>-5</posx>
+			<posy>-100</posy>
+			<width>319</width>
+			<height>379</height>
+			<texture>$INFO[listitem.property(fanart_image)]</texture>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<fadetime>200</fadetime>
+			<visible>IsEmpty(ListItem.thumb) + Window.IsActive(24)</visible>
+		</control>
+
+	</control>
+
+
+	<control type="group">
+		<include>ListIcon_EpisodeIconGroup</include>
+		<animation type="Visible">
+			<effect type="fade" time="450" start="0" end="100" />
+			<effect type="slide" start="0,-50" end="0,0" time="200" />
+		</animation>
+		<animation effect="fade" time="500" start="100" end="0" condition="[Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-10,0" time="300" condition="Control.HasFocus(61)">Conditional</animation>
+		<visible>[Container.Content(episodes) | Window.IsActive(2) | [Window.IsActive(24) + ![Container.Content(movies) | Container.Content(plugins) | Container.Content(plugincontent) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]] + ![Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]</visible>
 		<control type="largeimage">
 			<description>Episode Case Frame</description>
 			<include>LowList_EpisodeCaseVars</include>
@@ -1733,7 +1768,7 @@
 				<description>RUNTIME: info label</description>
 				<include>LowList_DetailInfoLabelPos4L</include>
 				<label>$LOCALIZE[2050]: [COLOR d0ffffff]$INFO[ListItem.duration][/COLOR]</label>
-				<visible>Window.IsActive(myvideofiles)</visible>
+				<visible>!IsEmpty(ListItem.duration)</visible>
 			</control>
 		</control>
 
@@ -1812,32 +1847,38 @@
 		<control type="group" id="7831">
 			<description>TV DESCRIPTION detail panel</description>
 			<include>ListDetail_PanelVars</include>
-			<visible>Window.IsActive(myvideofiles) + !Container.Content(movies) + !Skin.HasSetting(tvdescpaneloff) + !Control.IsVisible(7898)</visible>
+			<visible>[Window.IsActive(myvideofiles) + !Container.Content(movies) + !Skin.HasSetting(tvdescpaneloff) + !Control.IsVisible(7898)] | Window.IsActive(1)</visible>
 			<control type="textbox">
 				<description>DESCRIPTION: (Short - TV Shows and Episodes)</description>
 				<include>LowList_ShortTextBox</include>
-				<label fallback="31425">$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
+				<label>$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
 				<visible>!Container.Content(seasons) + !Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(Listitem.Property(Fanart_Image)) + IsEmpty(container.property(fanart_image))]</visible>
 			</control>
 
 			<control type="textbox">
 				<description>DESCRIPTION: (Short - Seasons)</description>
 				<include>LowList_ShortTextBox</include>
-				<label fallback="31425">$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
+				<label>$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
 				<visible>Container.Content(seasons) + !Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(Listitem.Property(Fanart_Image)) + IsEmpty(container.property(fanart_image))]</visible>
 			</control>
 
 			<control type="textbox">
 				<description>DESCRIPTION: (Tall - TV Shows and Episodes)</description>
 				<include>LowList_TallTextBox</include>
-				<label fallback="31425">$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
-				<visible>!Container.Content(seasons) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(Listitem.Property(Fanart_Image)) + IsEmpty(container.property(fanart_image))]</visible>
+				<label>$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
+				<visible>!Container.Content(seasons) + !Container.Content(plugincontent) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(Listitem.Property(Fanart_Image)) + IsEmpty(container.property(fanart_image))]</visible>
+			</control>
+			<control type="textbox">
+				<description>DESCRIPTION: (Tall - Plugins)</description>
+				<include>LowList_TallTextBox</include>
+				<label>[COLOR 66ffffff]$INFO[ListItem.Year][CR][/COLOR]$INFO[ListItem.Plot]</label>
+				<visible>Container.Content(plugincontent) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(Listitem.Property(Fanart_Image)) + IsEmpty(container.property(fanart_image))]</visible>
 			</control>
 
 			<control type="textbox">
 				<description>DESCRIPTION: (Tall - Seasons)</description>
 				<include>LowList_TallTextBox</include>
-				<label fallback="31425">$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
+				<label>$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
 				<visible>Container.Content(seasons) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(Listitem.Property(Fanart_Image)) + IsEmpty(container.property(fanart_image))]</visible>
 			</control>
 
@@ -1850,16 +1891,16 @@
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 			</control>
 			<control type="label">
-				<description>RUNTIME: info label</description>
+				<description>Label 2</description>
 				<include>LowList_DetailInfoLabelPos4L</include>
 				<label>[UPPERCASE]$LOCALIZE[2050]:[/UPPERCASE]  [COLOR d0ffffff]$INFO[ListItem.label2][/COLOR]</label>
-				<visible>Window.IsActive(24) + !IsEmpty(ListItem.label2) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<visible>!IsEmpty(ListItem.label2) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="label">
 				<description>GENRE:</description>
 				<include>LowList_DetailInfoLabelPos4L</include>
 				<label>[UPPERCASE]$LOCALIZE[515]:[/UPPERCASE] [COLOR d0ffffff]-[/COLOR]</label>
-				<visible>IsEmpty(ListItem.genre)</visible>
+				<visible>!IsEmpty(ListItem.genre)</visible>
 				<visible>!Container.Content(episodes) + !Container.Content(seasons) +  !Window.IsActive(24)</visible>
 			</control>
 

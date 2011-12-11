@@ -33,19 +33,27 @@
 	</include>
 
 	<include name="Furniture_WallBackground">
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<texture>wall/infowall_background.png</texture>
+			<visible>Control.IsVisible(53) + Container.Content(plugins)</visible>
+			<include>Animation_WindowFade200</include>
+			<animation effect="fade" start="100" end="70" time="400" condition="Skin.HasSetting(transparentwall)">Conditional</animation>
+		</control>		
+
 		
 		<control type="largeimage">
 			<include>FullscreenDimensions</include>
-			<texture>wall/wall_background.png</texture>
-			<visible>Control.IsVisible(53) + ![Skin.HasSetting(smallmoviewall) + Window.IsActive(24)]</visible>
+			<texture>wall/infowall_background.png</texture>
+			<visible>Control.IsVisible(53) + !Skin.HasSetting(smallmoviewall) + Window.IsActive(24) + !Container.Content(plugins)</visible>
 			<include>Animation_WindowFade200</include>
 			<animation effect="fade" start="100" end="70" time="400" condition="Skin.HasSetting(transparentwall)">Conditional</animation>
 		</control>
 
 		<control type="largeimage">
 			<include>FullscreenDimensions</include>
-			<texture>wall/wall_background.png</texture>
-			<visible>Control.IsVisible(53) + Skin.HasSetting(smallmoviewall) + Window.IsActive(24)</visible>
+			<texture>wall/infowall_background.png</texture>
+			<visible>Control.IsVisible(53) + Skin.HasSetting(smallmoviewall) + Window.IsActive(24) + !Container.Content(plugins)</visible>
 			<include>Animation_WindowFade200</include>
 			<animation effect="fade" start="100" end="70" time="400" condition="Skin.HasSetting(transparentwall)">Conditional</animation>
 		</control>		
@@ -56,8 +64,9 @@
 			<width>1085</width>
 			<height>509</height>
 			<texture>wall/wall_movie_squares.png</texture>
-			<visible>!Control.IsVisible(217) + !Skin.HasSetting(smallmoviewall) + Control.IsVisible(53) + [Window.IsActive(1) | Window.IsActive(501) | Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(myvideofiles) + !Container.Content(episodes)]]</visible>
+			<visible>!Skin.HasSetting(smallmoviewall) + Control.IsVisible(53) + [Window.IsActive(1) | Window.IsActive(501) | Window.IsActive(28) | Window.IsActive(24)] + !Container.Content(plugins)</visible>
 			<include>Animation_CommonFade</include>			
+			<animation effect="fade" start="100" end="70" time="400" condition="Skin.HasSetting(transparentwall)">Conditional</animation>
 		</control>
 
 		<control type="largeimage">
@@ -76,7 +85,7 @@
 			<width>1093</width>
 			<height>565</height>
 			<texture>wall/wall_movie_squares_small.png</texture>
-			<visible>Skin.HasSetting(smallmoviewall) + Control.IsVisible(53) + [Window.IsActive(1) | Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(myvideofiles) + !Container.Content(episodes)]]</visible>
+			<visible>Skin.HasSetting(smallmoviewall) + Control.IsVisible(53) + [Window.IsActive(1) | Window.IsActive(28) | Window.IsActive(24)]</visible>
 			<include>Animation_CommonFade</include>			
 		</control>		
 	</include>
@@ -153,7 +162,7 @@
 	<include name="Viewtype_Wall">
 	<control type="group">
 		<visible>Control.IsVisible(53)</visible>
-		<include>Furniture_WallBackground</include>
+		<include condition="!Container.Content(plugins)">Furniture_WallBackground</include>
 		<control type="largeimage">
 			<posx>-10</posx>
 			<posy>51</posy>
@@ -206,7 +215,7 @@
 			<include condition="Skin.HasSetting(VerticalWall)">VerticalWall</include>
 			<include condition="!Skin.HasSetting(VerticalWall)">HorizontalWall</include>
 			<visible>Window.IsActive(28) | Window.IsActive(1) | [Window.IsActive(myvideofiles) + !Container.Content(episodes)] | Window.IsActive(501)</visible>
-			<itemlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall)">
+			<itemlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall) + !Container.Content(plugins)">
 				<control type="largeimage">
 					<include>WallIconMovieDimensions</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
@@ -244,7 +253,7 @@
 				</control>
 
 			</itemlayout>
-			<focusedlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall)">
+			<focusedlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall) + !Container.Content(plugins)">
 				<control type="largeimage">
 					<include>WallIconMovieDimensions</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
@@ -289,7 +298,7 @@
 					<texture>NewLabel/$INFO[ListItem.overlay]</texture>
 				</control>
 			</focusedlayout>
-			<itemlayout width="101" height="146" condition="Skin.HasSetting(smallmoviewall)">
+			<itemlayout width="101" height="146" condition="Skin.HasSetting(smallmoviewall) + !Container.Content(plugins)">
 				<control type="largeimage">
 					<include>WallIconMovieDimensionsSmall</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
@@ -335,7 +344,7 @@
 					<texture>NewLabel/$INFO[ListItem.overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout width="101" height="146" condition="Skin.HasSetting(smallmoviewall)">
+			<focusedlayout width="101" height="146" condition="Skin.HasSetting(smallmoviewall) + !Container.Content(plugins)">
 				<control type="largeimage">
 					<include>WallIconMovieDimensionsSmall</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
@@ -389,6 +398,25 @@
 					<texture>NewLabel/$INFO[ListItem.overlay]</texture>
 				</control>
 			</focusedlayout>			
+			<itemlayout width="133" height="133" condition="Container.Content(plugins)">
+				<control type="largeimage">
+					<include>WallIconDimensions</include>
+					<texture>defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<info>ListItem.Icon</info>
+					<visible>Container.Content(plugins)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout width="133" height="133" condition="Container.Content(plugins)">
+				<control type="largeimage">
+					<include>WallIconDimensions</include>
+					<texture>defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<info>ListItem.Icon</info>
+					<visible>Container.Content(plugins)</visible>
+					<animation effect="zoom" center="66,66" start="100" end="130" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>
+			</focusedlayout>
 		</control>		
 
 		<control type="group">

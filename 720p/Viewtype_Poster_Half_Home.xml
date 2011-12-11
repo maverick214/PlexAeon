@@ -90,15 +90,15 @@
 			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
 			<itemlayout width="240" height="245">
 				<control type="group">
-				<posx>144</posx>
+				<posx>145</posx>
 				<posy>0</posy>
 
 					<control type="largeimage">
-						<posx>-149</posx>
+						<posx>-145</posx>
 						<posy>131</posy>
-						<width>220</width>
-						<height>220</height>
-						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<width>205</width>
+						<height>205</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<visible>true</visible>
@@ -112,11 +112,11 @@
 				<posy>0</posy>
 
 					<control type="largeimage">
-						<posx>-148</posx>
+						<posx>-145</posx>
 						<posy>115</posy>
-						<width>210</width>
-						<height>210</height>
-						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<width>205</width>
+						<height>205</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
