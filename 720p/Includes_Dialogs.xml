@@ -74,9 +74,9 @@
 
 	<include name="Dialogs_Progress">
 		<description>Progressbar</description>
-		<posx>59</posx>
+		<posx>85</posx>
 		<posy>3</posy>
-		<width>464</width>
+		<width>412</width>
 		<height>85</height>
 		<reveal>true</reveal>
 		<texturebg>dialogs/scan_blank.png</texturebg>
