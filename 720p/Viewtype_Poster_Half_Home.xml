@@ -1,33 +1,23 @@
-<!--Alaska-->
-
 <includes>
 
-	<include name="Down_OneList">
-			<ondown>300</ondown>
-	</include>
-	<include name="Down_OnDeck">
-			<ondown>SetFocus(11000)</ondown>
-			<ondown>Skin.ToggleSetting(OnDeckBottom)</ondown>
-	</include>
-
-	<include name="Down_RecentlyAdded">
-			<ondown>Skin.Reset(OnDeckBottom)</ondown>
-			<ondown>SetFocus(11001)</ondown>
-	</include>
-
-	<include name="OnDown11003">
-			<visible>Control.HasFocus(11003)</visible>
-	</include>
-
-	<include name="OnDown11002">
-			<visible>Control.HasFocus(11002)</visible>
-	</include>
-
-	<include name="OnDown11000or11001">
-			<visible>Control.HasFocus(11000) | Control.HasFocus(11001)</visible>
-	</include>
-
 	<include name="Viewtype_Poster_Half_Home">
+
+		<control type="button" id="451">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>[Control.IsVisible(11000) + !Control.IsVisible(11001)] | [!Control.IsVisible(11000) + Control.IsVisible(11001)]</visible>
+		</control>
+
+		<control type="button" id="451">
+			<onfocus>SetFocus(11000)</onfocus>
+			<onfocus>Skin.ToggleSetting(OnDeckBottom)</onfocus>
+			<visible>!Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11000) + Control.HasFocus(11001)</visible>
+		</control>
+
+		<control type="button" id="451">
+			<onfocus>SetFocus(11001)</onfocus>
+			<onfocus>Skin.Reset(OnDeckBottom)</onfocus>
+			<visible>Skin.HasSetting(OnDeckBottom) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+		</control>
 
 <!-- Channels for 11002 -->
 	<control type="group">
@@ -37,6 +27,7 @@
 			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
 
 	<control type="group">
+			<posy>0</posy>
 			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
 			<visible>Control.IsVisible(11002)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
@@ -156,7 +147,6 @@
 			<visible>Control.IsVisible(11003)</visible>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
-			<posy>150</posy>
 			<include>Animation_CommonFade</include>
 
 		<control type="largeimage">
@@ -302,6 +292,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(11001) + [Container(11001).ListItem(0).Type(movie) | Container(11001).ListItem(0).Type(episode)]</visible>
 			<animation effect="slide" start="0,0" end="0,150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11000)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
 			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
 			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11000) | !Control.HasFocus(11001)">Conditional</animation>
@@ -374,8 +365,7 @@
 			<onleft>11001</onleft>
 			<onright>11001</onright>
 			<onup>300</onup>
-			<include>Down_OnDeck</include>
-			<include condition="!Control.IsVisible(11000)">Down_OneList</include>
+			<ondown>451</ondown>
 			<viewtype label="Poster Half">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>0</focusposition>
@@ -468,6 +458,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(11000)  + [Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)]</visible>
 			<animation effect="slide" start="0,0" end="0,-150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11001)">Conditional</animation>
 			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
 			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
 			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11001) | !Control.HasFocus(11000)">Conditional</animation>
@@ -521,8 +512,7 @@
 			<onleft>11000</onleft>
 			<onright>11000</onright>
 			<onup>300</onup>
-			<include condition="!Control.IsVisible(11001)">Down_OneList</include>
-			<include condition="Control.IsVisible(11001)">Down_RecentlyAdded</include>
+			<ondown>451</ondown>
 			<viewtype label="Poster Half">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>0</focusposition>
@@ -617,6 +607,7 @@
 <!-- Recently Added Albums -->
 
 	<control type="group">
+			<posy>-150</posy>
 			<animation effect="fade" start="100" end="80" time="0" condition="[Control.IsVisible(11000)  + Container(11000).ListItem(0).Type(album)] + !Control.HasFocus(11000)">Conditional</animation>
 			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
 			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11000or11001</include>
@@ -722,7 +713,6 @@
 			<animation effect="fade" start="0" end="100" time="200" delay="1300">Visible</animation>
 			<posx>0</posx>
 			<posy>0</posy>
-			<include>Animation_HiddenByInfo</include>
 
 <!-- Extra Icons -->
 
@@ -816,8 +806,6 @@
 				<posy>-20</posy>
 				<include>Animation_CommonFade</include>
 
-		<control type="group">
-			<visible>Container(11001).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(album)</visible>
 			<control type="label">
 				<posx>310</posx>
 				<posy>140</posy>
@@ -827,7 +815,7 @@
 				<font>Font_Bold24</font>
 				<textcolor>FFe1e1e1</textcolor>
 				<label>[UPPERCASE]$INFO[Container(11001).ListItem(0).Label][/UPPERCASE]</label>
-				<visible>Control.HasFocus(11001)</visible>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie)</visible>
 			</control>
 
 			<control type="label">
@@ -839,9 +827,8 @@
 				<font>Font_Bold24</font>
 				<textcolor>FFe1e1e1</textcolor>
 				<label>[UPPERCASE]$INFO[Container(11000).ListItem(0).Label][/UPPERCASE]</label>
-				<visible>Control.HasFocus(11000)</visible>
+				<visible>Control.HasFocus(11000) + [Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(album)]</visible>
 			</control>
-		</control>
 
 			<control type="label">
 				<posx>310</posx>

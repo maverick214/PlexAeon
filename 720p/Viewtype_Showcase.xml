@@ -333,7 +333,7 @@
 				</control>
 				<control type="textbox">
 					<posx>105</posx>
-					<posy>198</posy>
+					<posy>205</posy>
 					<width>435</width>
 					<height>149</height>
 					<font>Font_MultiplexPlotSmall</font>
@@ -370,7 +370,7 @@
 				</control>
 				<control type="textbox">
 					<posx>105</posx>
-					<posy>198</posy>
+					<posy>205</posy>
 					<width>435</width>
 					<height>149</height>
 					<font>Font_MultiplexPlotSmall</font>
