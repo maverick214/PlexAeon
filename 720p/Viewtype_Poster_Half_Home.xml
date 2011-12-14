@@ -1,8 +1,20 @@
 <includes>
+  <include name="OnDown11003">
+     <visible>Control.HasFocus(11003)</visible>
+  </include>
+
+  <include name="OnDown11002">
+      <visible>Control.HasFocus(11002)</visible>
+  </include>
+
+  <include name="OnDown11000or11001">
+      <visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(451)</visible>
+  </include>
+  
 
 	<include name="Viewtype_Poster_Half_Home">
 
-		<control type="button" id="451">
+  		<control type="button" id="451">
 			<onfocus>SetFocus(300)</onfocus>
 			<visible>[Control.IsVisible(11000) + !Control.IsVisible(11001)] | [!Control.IsVisible(11000) + Control.IsVisible(11001)]</visible>
 		</control>
