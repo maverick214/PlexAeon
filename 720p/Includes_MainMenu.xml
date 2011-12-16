@@ -56,7 +56,7 @@
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(11002)</onfocus>
-			<visible>[Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1)] + Control.IsVisible(11002)</visible>
+			<visible>[Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4)] + Control.IsVisible(11002)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
