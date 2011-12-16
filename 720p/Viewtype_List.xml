@@ -135,7 +135,7 @@
 
 	<include name="Viewtype_List">
 	<control type="group">
-	<visible>Control.IsVisible(50) + ![[Container.Content(plugins) | Container.Content(plugincontent)] + Skin.HasSetting(ForceLowList)]</visible>
+	<visible>Control.IsVisible(50) + [![[Container.Content(plugins) | Container.Content(plugincontent)] + Skin.HasSetting(ForceLowList)] | Window.IsActive(1)]</visible>
 	<animation effect="slide" start="0,0" end="310,0" time="0" easing="inout" tween="cubic" condition="Container.Content(Secondary)">Conditional</animation>
 	<control type="list" id="50">
 		<viewtype label="31752">list</viewtype>
@@ -149,7 +149,7 @@
 		<onright>61</onright>
 		<onup>50</onup>
 		<ondown>50</ondown>
-		<visible>![[Container.Content(plugins) | Container.Content(plugincontent)] + Skin.HasSetting(ForceLowList)]</visible>
+		<visible>[![[Container.Content(plugins) | Container.Content(plugincontent)] + Skin.HasSetting(ForceLowList)]] | Window.IsActive(1)</visible>
 		<itemlayout height="43">
 			<control type="largeimage">
 				<posx>0</posx>
