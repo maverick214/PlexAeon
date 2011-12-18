@@ -28,7 +28,7 @@
 		<control type="progress">
 			<description>Progressbar</description>
 			<posx>0</posx>
-			<posy>-260</posy>
+			<posy>-75</posy>
 			<width>1280</width>
 			<height>226</height>
 			<info>Player.Progress</info>
