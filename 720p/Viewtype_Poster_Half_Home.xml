@@ -721,7 +721,7 @@
 		<!-- Browser label and flags -->
 		
 		<control type="group">
-			<visible>Control.HasFocus(11001) | Control.HasFocus(11000)</visible>
+			<visible>Control.HasFocus(11001) | Control.HasFocus(11000) | Control.HasFocus(451)</visible>
 			<animation effect="fade" start="0" end="100" time="200" delay="1300">Visible</animation>
 			<posx>0</posx>
 			<posy>0</posy>

@@ -1,7 +1,5 @@
 <window id="24">
 	<defaultcontrol always="true">50</defaultcontrol>
-			<animation effect="fade" end="100" time="500" delay="0">WindowOpen</animation>
-			<animation effect="fade" end="0" time="500" delay="0">WindowClose</animation>
 	<allowoverlay>yes</allowoverlay>
 	<views>50,551,52,553,555,563,53,512,57,55,54,598</views>
 	<controls>

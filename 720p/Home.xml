@@ -209,8 +209,7 @@
 				<texture>BlackTransparent.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<animation effect="fade" end="70" time="300" delay="0">Visible</animation>
-				<animation effect="fade" start="70" end="0" time="1000" delay="500">Hidden</animation>
-				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.IsVisible(11003) | Control.HasFocus(11002)</visible>
+				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.IsVisible(11003) | Control.HasFocus(11002) | Control.HasFocus(451)</visible>
 			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
 			</control>
 
@@ -226,8 +225,6 @@
 			<height>720</height>
 	<!--		<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  -->
 			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
-			<include>Animation_OpenCloseZoom</include>
-			<include>Animation_CommonFade</include>
 
 			<control type="largeimage">
 				<posx>0</posx>
@@ -235,7 +232,6 @@
 				<width>1280</width>
 				<height>150</height>
 				<texture>home/homemenu_back.png</texture>
-				<include>Animation_CommonFade</include>
 			</control>
 			<control type="group">
 				<posx>0</posx>
@@ -251,7 +247,6 @@
 				<width>1280</width>
 				<height>150</height>
 				<texture>home/homemenu_gradient.png</texture>
-				<include>Animation_CommonFade</include>
 				<visible>!Skin.HasSetting(nohomegradient)</visible>
 				<colordiffuse>d0FFFFFF</colordiffuse>
 			</control>
