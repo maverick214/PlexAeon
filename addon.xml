@@ -8,7 +8,7 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<minversion app="xbmc">28000</minversion>
-		<summary>Created by Hitcher, ccMatrix, CF2009.</summary>
+		<summary>Created by Duncan Harris, Maverick214</summary>
 		<description>[CR]Designed by Duncan Harris.</description>
 		<disclaimer/>
 	</extension>

@@ -8,7 +8,7 @@
 		<posy>620</posy>
 		<width>1280</width>
 		<height>159</height>
-		<include>Animation_CommonFadeVideo</include>	
+		<include>Animation_CommonFadeIn</include>	
 	
 	<control type="image">
 		<description>Panel</description>
@@ -18,7 +18,7 @@
 		<width>1280</width>
 		<colordiffuse>cdffffff</colordiffuse>
 		<texture>osd/osd_back.png</texture>
-		<include>Animation_CommonFadeVideo</include>	
+		<include>Animation_CommonFadeIn</include>	
 	</control>
 
 	<control type="progress" id="23">
@@ -35,7 +35,7 @@
 		<righttexture>osd/progress_right.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 		<visible>true</visible>
-		<include>Animation_CommonFadeVideo</include>	
+		<include>Animation_CommonFadeIn</include>	
 	</control>
 
 	<control type="image">
@@ -44,7 +44,7 @@
 		<width>281</width>
 		<height>28</height>
 		<texture>osd/osd_button_paused.png</texture>
-		<include>Animation_CommonFade</include>
+		<include>Animation_CommonFadeIn</include>
 		<visible>Player.Paused</visible>
 		
 	</control>
@@ -58,7 +58,7 @@
 		<align>center</align>
 		<font>Font_OSDSeek</font>
 		<textcolor>FF363636</textcolor>
-		<include>Animation_CommonFadeVideo</include>	
+		<include>Animation_CommonFadeIn</include>	
 		<label>$LOCALIZE[31007]</label>
 		<visible>Player.Paused</visible>
 	</control>
@@ -68,7 +68,7 @@
 <control type="group">
 
 <visible>!Skin.HasSetting(extraosdoff)</visible>
-<include>Animation_CommonFadeVideo</include>	
+<include>Animation_CommonFadeIn</include>	
 	<description>top bar info</description> 	
 	<control type="image">
 		<description>Panel</description>
@@ -189,7 +189,7 @@
 
 <!--  Size and implementation of covers -->
 <control type="group">
-<include>Animation_CommonFadeVideo</include>	
+<include>Animation_CommonFadeIn</include>	
 <visible>!Skin.HasSetting(extraosdoff)</visible>
 
   <control type="image">
@@ -366,7 +366,7 @@
 				<font>Font_OSDTime</font>
 				<colordiffuse>d0FFFFFF</colordiffuse>
 				<label>$INFO[VideoPlayer.Time]</label>
-				<include>Animation_CommonFadeVideo</include>	
+				<include>Animation_CommonFadeIn</include>	
 			</control>
 
 			<control type="label">
@@ -377,7 +377,7 @@
 				<font>Font_OSDTime</font>
 				<colordiffuse>d0FFFFFF</colordiffuse>
 				<label>$LOCALIZE[31720]: $INFO[System.Time]</label>
-				<include>Animation_CommonFadeVideo</include>	
+				<include>Animation_CommonFadeIn</include>	
 			</control>
 
 			<control type="label">
@@ -390,7 +390,7 @@
 				<font>Font_OSDMusicTitle</font>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>
-				<include>Animation_CommonFadeVideo</include>	
+				<include>Animation_CommonFadeIn</include>	
 				<visible>Skin.HasSetting(extraosdoff)</visible>
 			</control>
 
@@ -403,7 +403,7 @@
 				<font>Font_OSDTime</font>
 				<colordiffuse>d0FFFFFF</colordiffuse>
 				<label>$INFO[VideoPlayer.Duration]</label>
-				<include>Animation_CommonFadeVideo</include>	
+				<include>Animation_CommonFadeIn</include>	
 			</control>
 
 			<control type="label">
@@ -415,7 +415,7 @@
 				<font>Font_OSDTime</font>
 				<colordiffuse>d0FFFFFF</colordiffuse>
 				<label>$LOCALIZE[31710]: $INFO[Player.FinishTime]</label>
-				<include>Animation_CommonFadeVideo</include>	
+				<include>Animation_CommonFadeIn</include>	
 			</control>
 
 		</control>

@@ -275,7 +275,7 @@
  
 					<control type="label">
 						<include>MultiplexInfoValueBigThumb</include>
-						<label fallback="31425">$INFO[ListItem.RatingandVotes]</label>
+						<label fallback="31425">$INFO[ListItem.Rating]</label>
 						<visible>Skin.HasSetting(movieratingtext)</visible>
 					</control>
  
@@ -1117,7 +1117,17 @@
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 			<info>ListItem.Icon</info>
 		</control>
- 
+  		<control type="largeimage">
+			<posx>66</posx>
+			<posy>125</posy>
+			<width>54</width>
+			<height>23</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
+			<animation effect="zoom" center="auto" start="100" end="80" time="0" condition="true">Conditional</animation>
+			<visible>!Skin.HasSetting(HDiconOff)</visible>
+		</control>
+
 		<control type="largeimage">
 			<include>MultiplexIconDimensionsWrapDVDCase</include>
 			<texture>multiplex/boxes/multiplex_glass.png</texture>
@@ -1203,6 +1213,17 @@
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 			<info>ListItem.Icon</info>
 			<include>Animation_MultiplexFocusZoomDVD</include>
+		</control>
+ 		<control type="largeimage">
+			<posx>66</posx>
+			<posy>125</posy>
+			<width>54</width>
+			<height>23</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
+			<animation effect="zoom" center="auto" start="100" end="80" time="0" condition="true">Conditional</animation>
+			<include>Animation_MultiplexFocusZoomDVD</include>
+			<visible>!Skin.HasSetting(HDiconOff)</visible>
 		</control>
  
 		<control type="largeimage">

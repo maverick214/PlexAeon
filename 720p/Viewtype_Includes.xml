@@ -4724,6 +4724,7 @@
 					<animation effect="rotatey" center="0" start="45" end="45" time="0" condition="true">Conditional</animation>
 					<texture>list/list_movieicon_glass.png</texture>
 					<bordertexture border="-12">mod/list_movieicon_frame2.png</bordertexture>
+					<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
 			</control>
 	
 		</control>		
