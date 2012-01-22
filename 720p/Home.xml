@@ -153,37 +153,6 @@
 
 		<include condition="!Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)">Background_Wallpaper</include>
 
-<!-- Second List for Severs -->
-
-		<control type="largeimage">
-			<posx>79</posx>
-			<posy>386</posy>
-			<include>Animation_SubMenu</include>
-			<width>1123</width>
-			<height>23</height>
-			<texture>home/submenubar_music.png</texture>
-			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
-			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
-			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
-		</control>
-
-		<control type="label">
-			<align>center</align>
-			<posx>69</posx>
-			<posy>388</posy>
-			<font>Font_RecentlyAdded</font>
-			<include>Animation_SubMenu</include>
-			<width>1123</width>
-			<height>33</height>
-			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
-			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
-			<textcolor>FFffffff</textcolor>
-			<label>[UPPERCASE]$INFO[Container(300).ListItem.Label2][/UPPERCASE]</label>
-			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
-		</control>
-
 
 			<!-- Fanart Dimming overlay -->
 
@@ -212,6 +181,37 @@
 				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.IsVisible(11003) | Control.HasFocus(11002) | Control.HasFocus(451)</visible>
 			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
 			</control>
+<!-- Second List for Severs -->
+
+		<control type="largeimage">
+			<posx>79</posx>
+			<posy>386</posy>
+			<include>Animation_SubMenu</include>
+			<width>1123</width>
+			<height>23</height>
+			<texture>home/submenubar_music.png</texture>
+			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
+			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
+		</control>
+
+		<control type="label">
+			<align>center</align>
+			<posx>69</posx>
+			<posy>388</posy>
+			<font>Font_RecentlyAdded</font>
+			<include>Animation_SubMenu</include>
+			<width>1123</width>
+			<height>33</height>
+			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
+			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>$INFO[Container(300).ListItem.Label2]</label>
+			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
+		</control>
+
 
 		<include>Furniture_HomeNowPlaying</include>
 <!--		<include>Objects_WeatherPopup</include>  -->

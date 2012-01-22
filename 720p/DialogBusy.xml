@@ -23,9 +23,6 @@
 
 		</control>
 -->
-		<control type="group">
-
-			<animation effect="fade" time="150" delay="300">WindowOpen</animation>
 
 		<control type="image">
 			<posx>595</posx>
@@ -57,6 +54,5 @@
 			<texture diffuse="thumbs/cdcover_mask.png">thumbs/poster_glass_noedge.png</texture>		
 			<aspectratio scalediffuse="false">scale</aspectratio>		
 		</control>
-	</control>
 	</controls>
 </window>

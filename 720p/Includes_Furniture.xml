@@ -363,6 +363,23 @@
 		</control>
 	</include>
 	
+	<include name="Furniture_Time_Shared">
+		<control type="group">
+			<include>Furniture_TimeGroupVars</include>
+			<visible>!Skin.HasSetting(highertime) + !Skin.HasSetting(notime)</visible>
+			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<include>Animation_CommonFade</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_TimePanel</include>
+		</control>
+		<control type="group">
+			<include>Furniture_TimeGroupHighVars</include>
+			<visible>[Skin.HasSetting(highertime) | [Control.IsVisible(553) | Control.IsVisible(52) | Control.IsVisible(555) | Control.IsVisible(556) | Control.IsVisible(552) | Control.IsVisible(57) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(598) | Control.IsVisible(54) | Control.IsVisible(512) | Control.IsVisible(51) | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(53) | Control.IsVisible(563)]] + !Skin.HasSetting(notime)</visible>
+			<include>Animation_CommonFade</include>
+			<include>Furniture_TimePanelHigh</include>
+		</control>
+	</include>
+
 	<include name="Furniture_VirtualTime">
 		<control type="group">
 			<posx>586</posx>
@@ -792,32 +809,32 @@
 	<include name="Furniture_MediaPanel">
 	<control type="group">
 		<include>Animation_OpenCloseSlide</include>
-		<control type="largeimage">
+		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture>wall/infowall_background.png</texture>
 			<include>Animation_WindowFade200</include>
 			<animation effect="fade" start="100" end="90" time="0" condition="true">Conditional</animation>
 			<visible>Control.IsVisible(512)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>Furniture_MediaPanelVars</include>
 			<texture>windows/backpanelwide.png</texture>
 			<animation effect="fade" start="80" end="80" time="0" condition="Skin.HasSetting(CoverFlowPanelThin)">Conditional</animation>
 			<visible>Control.IsVisible(55)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>Furniture_MediaPanelVars</include>
 			<texture>windows/backpanel.png</texture>
 			<animation effect="fade" start="80" end="80" time="0" condition="Skin.HasSetting(ListPanelThin)">Conditional</animation>
 			<visible>Control.IsVisible(50) + !Container.Content(Secondary)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>Furniture_MediaPanelVars</include>
 			<texture>windows/backpanelSecondary.png</texture>
 			<animation effect="fade" start="80" end="80" time="0" condition="Skin.HasSetting(ListPanelThin)">Conditional</animation>
 			<visible>Control.IsVisible(50) + Container.Content(Secondary)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<posx>0</posx>
 			<posy>315</posy>
 			<width>1280</width>
@@ -830,7 +847,7 @@
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<posx>0</posx>
 			<posy>615</posy>
 			<width>1280</width>
@@ -843,7 +860,7 @@
 			<include>Animation_HideMultiplex</include>
 		</control>
 
-		<control type="largeimage">
+		<control type="image">
 			<posx>144</posx>
 			<posy>583</posy>
 			<width>993</width>
@@ -855,7 +872,7 @@
 			<include>Animation_HideMultiplex</include>
 			<visible>Control.IsVisible(57) | Control.IsVisible(52) | [Control.IsVisible(53) + Skin.HasSetting(newwall)] | [Control.IsVisible(500) + Skin.HasSetting(newwall)] | [Control.IsVisible(501) + Skin.HasSetting(newwall)] | [Control.IsVisible(502) + Skin.HasSetting(newwall)] | Control.IsVisible(552)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<posx>140</posx>
 			<posy>503</posy>
 			<width>993</width>
