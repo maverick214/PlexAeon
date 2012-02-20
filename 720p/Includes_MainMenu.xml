@@ -375,6 +375,13 @@
 					<width min="95" max="95">auto</width>
 				</item>
 
+				<item id="10">
+					<label>Shared Content</label>
+					<include>BackgroundVarsshared</include>
+					<onclick>Skin.SetString(custom,Customsharedfolder)</onclick>
+					<onclick>SetFocus(92)</onclick>
+					<width min="95" max="95">auto</width>
+				</item>
 				<item id="9">
 					<include>BackgroundVarsSettings</include>
 					<label>31016</label>

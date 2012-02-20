@@ -164,9 +164,9 @@
 				<aspectratio>stretch</aspectratio>
 				<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
 				<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
-				<visible>Control.IsVisible(11000) | Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003) | Control.IsVisible(12000)</visible>
+				<visible>[Control.IsVisible(11000) | Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003) | Control.IsVisible(12000)] + !Skin.HasSetting(lowermainmenu)</visible>
 				<animation effect="fade" start="70" end="0" time="0" delay="00">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			</control>
 
 
@@ -179,7 +179,7 @@
 				<aspectratio>stretch</aspectratio>
 				<animation effect="fade" end="70" time="300" delay="0">Visible</animation>
 				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.IsVisible(11003) | Control.HasFocus(11002) | Control.HasFocus(451)</visible>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			</control>
 <!-- Second List for Severs -->
 
@@ -192,7 +192,8 @@
 			<texture>home/submenubar_music.png</texture>
 			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
 			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  
 			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
 		</control>
 
@@ -206,7 +207,8 @@
 			<height>33</height>
 			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
 			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  
 			<textcolor>FFFFFFFF</textcolor>
 			<label>$INFO[Container(300).ListItem.Label2]</label>
 			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
@@ -223,8 +225,8 @@
 			<posy>-20</posy>
 			<width>1280</width>
 			<height>720</height>
-	<!--		<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  -->
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
 
 			<control type="largeimage">
 				<posx>0</posx>

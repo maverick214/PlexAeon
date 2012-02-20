@@ -176,6 +176,12 @@
 		<info>Skin.String(CustomQueuebg)</info>
 	</include>
 
+	<include name="BackgroundVarsShared">
+		<icon>backdrops/default_shared/default.jpg</icon>
+		<thumb>$INFO[Skin.String(Customsharedbg)]</thumb>
+		<imagepath>backdrops/default_shared/default.jpg</imagepath>
+		<info>Skin.String(Customsharedbg)</info>
+	</include>
 	<include name="BackgroundVarsPlayDVD">
 		<icon>backdrops/default_settings/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomPlayDVDbg)]</thumb>
@@ -804,6 +810,26 @@
             <visible>substring(Container(300).ListItem.Label,Queue) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomQueueFolder)</visible>
 		</control>
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>backdrops/default_shared/default.jpg</texture>
+			<info>Skin.String(Customshared)</info>
+            <visible>substring(Container(300).ListItem.Label,Shared Content) + Control.IsVisible(300)]</visible>
+            <visible>!Skin.String(CustomsharedFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomsharedFolder)</info>
+			<randomize>true</randomize>
+            <visible>substring(Container(300).ListItem.Label,Shared Content) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomsharedFolder)</visible>
+		</control>
 
 		<control type="largeimage">
 			<animation effect="fade" end="100" time="600">Visible</animation>
@@ -1149,6 +1175,21 @@
 			<info>Skin.String(CustomQueueFolder)</info>
             <visible>[substring(Container(300).ListItem.Label,Queue) + Control.IsVisible(300)] | [substring(Container(301).ListItem.Label,Queue) + Control.IsVisible(301)]</visible>
 			<visible>Skin.String(CustomQueueFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_shared</imagepath>
+			<info>Skin.String(Customshared)</info>
+            <visible>[substring(Container(300).ListItem.Label,Shared Content) + Control.IsVisible(300)] | [substring(Container(301).ListItem.Label,Shared Content) + Control.IsVisible(301)]</visible>
+            <visible>!Skin.String(CustomsharedFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomsharedFolder)</info>
+            <visible>[substring(Container(300).ListItem.Label,Shared Content) + Control.IsVisible(300)] | [substring(Container(301).ListItem.Label,Shared Content) + Control.IsVisible(301)]</visible>
+			<visible>Skin.String(CustomsharedFolder)</visible>
 		</control>
 
 <!--

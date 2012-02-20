@@ -116,7 +116,7 @@
 
 	<include name="Furniture_TimePanel">
 		<control type="group">
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<posy>-20</posy>
 		<control type="largeimage">
 			<posx>20</posx>
@@ -350,7 +350,7 @@
 		<control type="group">
 			<include>Furniture_TimeGroupVars</include>
 			<visible>!Skin.HasSetting(highertime) + Window.IsActive(Home) + !Skin.HasSetting(notime)</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<include>Animation_OpenCloseZoom</include>
 			<include>Furniture_TimePanel</include>
@@ -367,7 +367,7 @@
 		<control type="group">
 			<include>Furniture_TimeGroupVars</include>
 			<visible>!Skin.HasSetting(highertime) + !Skin.HasSetting(notime)</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<include>Animation_OpenCloseZoom</include>
 			<include>Furniture_TimePanel</include>
