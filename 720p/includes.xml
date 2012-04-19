@@ -37,8 +37,8 @@
 	<include file="Viewtype_Coverflow.xml" />
 	<include file="Viewtype_Includes.xml" />
 	<include file="Viewtype_Poster_Half.xml" />
-	<include file="Viewtype_Poster_Half_Home.xml" />
-
+	<include file="Viewtype_RecentlyAdded_Lower.xml" />
+	<include file="Viewtype_RecentlyAdded_Center.xml" />
 
 	<include name="Search_Label">
 		<posx>15</posx>

@@ -192,9 +192,16 @@
             <visible>Skin.HasSetting(CustomFanartSlideshow) + Skin.HasSetting(FanartSlideshow)</visible>
           </control>
 
+			<control type="radiobutton" id="504">
+				<include>Objects_SettingsDefaultRadioButton</include>
+				<label>Lower Home Menu</label>
+				<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
+				<selected>Skin.HasSetting(lowermainmenu)</selected>
+			</control>
+
 			<control type="radiobutton" id="503">
 				<include>Objects_SettingsDefaultRadioButton</include>
-				<label>Latest/In Progress Hidden until Pressing Down</label>
+				<label>Latest/In Progress Hidden until pressing Up or Down</label>
 				<onclick>Skin.ToggleSetting(OnDownRecentlyAdded)</onclick>
 				<selected>Skin.HasSetting(OnDownRecentlyAdded)</selected>
 			</control>

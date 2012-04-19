@@ -18,7 +18,7 @@
 			<posx>79</posx>
 			<posy>406</posy>
 			<visible>ControlGroup(940).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<control type="image">
 				<width>1123</width>
@@ -96,7 +96,7 @@
 			<posx>79</posx>
 			<posy>406</posy>
 			<visible>ControlGroup(941).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<control type="image">
 				<width>1123</width>
@@ -168,7 +168,7 @@
 			<posx>143</posx>
 			<posy>406</posy>
 			<visible>ControlGroup(942).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<control type="image">
 				<width>994</width>
@@ -237,7 +237,7 @@
 			<posx>79</posx>
 			<posy>386</posy>
 			<visible>ControlGroup(943).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_SubMenu</include>
 			<control type="image">
 				<width>1123</width>
@@ -310,7 +310,7 @@
 			<posx>79</posx>
 			<posy>386</posy>
 			<visible>ControlGroup(944).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_SubMenu</include>
 			<control type="image">
 				<width>1123</width>
@@ -343,7 +343,7 @@
 					<include>Submenu_Button</include>
 					<description>Sleep MAC</description>
 					<label>31207</label>
-					<onclick>XBMC.SleepSystem()</onclick>
+					<onclick>Plex.Suspend</onclick>
 				</control>
 				<control type="button" id="43">
 					<include>Submenu_Button</include>
@@ -353,12 +353,12 @@
 				<control type="button" id="44">
 					<include>Submenu_Button</include>
 					<label>31212</label>
-					<onclick>XBMC.SleepSystem()</onclick>
+					<onclick>Plex.Suspend</onclick>
 				</control>
 				<control type="button" id="45">
 					<include>Submenu_Button</include>
 					<label>31213</label>
-					<onclick>Plex.Powerdown()</onclick>
+					<onclick>Plex.Powerdown</onclick>
 				</control>
 				<control type="button" id="46">
 					<include>Submenu_Button</include>
@@ -379,7 +379,7 @@
 			<posx>79</posx>
 			<posy>386</posy>
 			<visible>ControlGroup(945).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_SubMenu</include>
 			<control type="image">
 				<width>1123</width>
@@ -447,7 +447,7 @@
 			<posx>79</posx>
 			<posy>386</posy>
 			<visible>ControlGroup(946).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_SubMenu</include>
 			<control type="image">
 				<width>1123</width>

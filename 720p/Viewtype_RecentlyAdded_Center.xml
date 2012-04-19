@@ -12,7 +12,7 @@
   </include>
   
 
-	<include name="Viewtype_Poster_Half_Home">
+	<include name="Viewtype_RecentlyAdded_Center">
 
   		<control type="button" id="451">
 			<onfocus>SetFocus(300)</onfocus>

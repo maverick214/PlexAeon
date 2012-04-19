@@ -24,12 +24,12 @@
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
-	<include name="UpforFavorites">
+	<include name="MainMenu_Controls_Center_Activate">
 		<onup>XBMC.ActivateWindow(1111)</onup>
 		<ondown>351</ondown>
 	</include>
-	<include name="UpforPower">
-		<onup>XBMC.ActivateWindow(1111)</onup>
+	<include name="MainMenu_Controls_Lower_Activate">
+		<onup>351</onup>
 		<ondown>351</ondown>
 	</include>
 	<!-- Weather Backdrop by Current Weather Conditions -->
@@ -38,7 +38,7 @@
 	</include>
 	<!-- End -->
 
-	<include name="MainMenu">
+	<include name="MainMenu_Controls_Center">
 
 		<control type="button" id="351">
 			<onfocus>SetFocus(940)</onfocus>
@@ -68,6 +68,7 @@
 			<visible>Container(300).HasFocus(8)</visible>
 		</control>
 -->
+			
 		<control type="button" id="351">
 			<onfocus>SetFocus(946)</onfocus>
 			<visible>Container(300).HasFocus(12)</visible>
@@ -96,24 +97,76 @@
 			<onfocus>SetFocus(11003)</onfocus>
 			<visible>Control.IsVisible(11003)</visible>
 		</control>
+	</include>
 
+	<include name="MainMenu_Controls_Lower">
 
+		<control type="button" id="351">
+			<onfocus>SetFocus(940)</onfocus>
+			<visible>Container(300).HasFocus(6)</visible>
+		</control>
 <!--
 		<control type="button" id="351">
-			<onfocus>Skin.ToggleSetting(SectionsMenu)</onfocus>
-			<onfocus>Notification(Full Menu active,Press Down for Sections Menu,6000)</onfocus>
- 			<onfocus>SetFocus(300)</onfocus>
-    		<visible>![Container(300).HasFocus(2) | Container(300).HasFocus(10) |Container(300).HasFocus(6) | Container(300).HasFocus(1) | Container(300).HasFocus(9) | Container(300).HasFocus(3) | Container(300).HasFocus(8)] + !Skin.HasSetting(NoSectionsMenu) + Skin.HasSetting(SectionsMenu)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>Skin.ToggleSetting(SectionsMenu)</onfocus>
-			<onfocus>Notification(Sections Only Menu Active,Press Down for Full Menu,5000)</onfocus>
- 			<onfocus>SetFocus(300)</onfocus>
-    		<visible>![Container(300).HasFocus(2) | Container(300).HasFocus(10) |Container(300).HasFocus(6) | Container(300).HasFocus(1) | Container(300).HasFocus(9) | Container(300).HasFocus(3) | Container(300).HasFocus(8)] + !Skin.HasSetting(NoSectionsMenu) + !Skin.HasSetting(SectionsMenu)</visible>
+			<onfocus>SetFocus(941)</onfocus>
+			<visible>Container(300).HasFocus(1)</visible>
 		</control>
 -->
+		<control type="button" id="351">
+			<onfocus>SetFocus(943)</onfocus>
+			<visible>Container(300).HasFocus(9)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(11002)</onfocus>
+			<visible>[Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4)] + Control.IsVisible(11002)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(944)</onfocus>
+			<visible>Container(300).HasFocus(22)</visible>
+		</control>
+<!--
+		<control type="button" id="351">
+			<onfocus>SetFocus(945)</onfocus>
+			<visible>Container(300).HasFocus(8)</visible>
+		</control>
+-->
+			
+		<control type="button" id="351">
+			<onfocus>SetFocus(946)</onfocus>
+			<visible>Container(300).HasFocus(12)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>!Control.IsVisible(11000) + !Control.IsVisible(11001) + !Control.IsVisible(11002) + !Control.IsVisible(11003)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(11000)</onfocus>
+			<visible>Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11000)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(11001)</onfocus>
+			<visible>!Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11000) + Control.IsVisible(11001)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(11001)</onfocus>
+			<visible>!Control.IsVisible(11000) + !Control.IsVisible(11002) + !Control.IsVisible(11003)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(11000)</onfocus>
+			<visible>!Control.IsVisible(11001) + !Control.IsVisible(11002) + Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(11003)</onfocus>
+			<visible>Control.IsVisible(11003)</visible>
+		</control>
+	</include>
+
+	<include name="MainMenu">
+
+			<include condition="!Skin.HasSetting(lowermainmenu)">MainMenu_Controls_Center</include> 
+			<include condition="Skin.HasSetting(lowermainmenu)">MainMenu_Controls_Lower</include> 
+
 		<control type="wraplist" id="300">
-			<posx>-250</posx>
+			<posx>-240</posx>
 			<posy>0</posy>
 			<height>61</height>
 			<width>1520</width>
@@ -123,8 +176,8 @@
 			<orientation>horizontal</orientation>
 			<focusposition>2</focusposition>
 			<scrolltime>180</scrolltime>
-			<include condition="Skin.HasSetting(UpforPower)">UpforPower</include> 
-			<include condition="!Skin.HasSetting(UpforPower)">UpforFavorites</include> 
+			<include condition="!Skin.HasSetting(lowermainmenu)">MainMenu_Controls_Center_Activate</include> 
+			<include condition="Skin.HasSetting(lowermainmenu)">MainMenu_Controls_Lower_Activate</include> 
 			<onfocus>SetFocus(299)</onfocus>
 			<animation type="WindowOpen" condition="!Skin.HasSetting(nozooms)" reversible="false">
 				<effect type="slide" start="-1280" end="0" time="400" tween="quadratic" easing="out" />
@@ -164,7 +217,7 @@
 					<description>Shutdown</description>
 					<include>BackgroundVarsShutdown</include>
 					<label>31207</label>
-					<onclick>Plex.Suspend()</onclick>
+					<onclick>Plex.Suspend</onclick>
 					<visible>!Skin.HasSetting(noshutdown) + Skin.HasSetting(SleepSub)</visible>
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>

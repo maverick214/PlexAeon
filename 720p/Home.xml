@@ -155,6 +155,8 @@
 
 
 			<!-- Fanart Dimming overlay -->
+		<control type="group">
+			<visible>!Skin.HasSetting(lowermainmenu)</visible>
 
 			<control type="largeimage">
 				<width>1280</width>
@@ -164,11 +166,10 @@
 				<aspectratio>stretch</aspectratio>
 				<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
 				<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
-				<visible>[Control.IsVisible(11000) | Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003) | Control.IsVisible(12000)] + !Skin.HasSetting(lowermainmenu)</visible>
+				<visible>Control.IsVisible(11000) | Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003) | Control.IsVisible(12000)</visible>
 				<animation effect="fade" start="70" end="0" time="0" delay="00">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
 			</control>
-
 
 			<!-- second dim lists are visible -->
 			<control type="largeimage">
@@ -179,8 +180,27 @@
 				<aspectratio>stretch</aspectratio>
 				<animation effect="fade" end="70" time="300" delay="0">Visible</animation>
 				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.IsVisible(11003) | Control.HasFocus(11002) | Control.HasFocus(451)</visible>
-			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
 			</control>
+		</control>
+
+		<control type="group">
+			<visible>Skin.HasSetting(lowermainmenu)</visible>
+
+			<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<posy>0</posy>
+				<texture>BlackTransparent.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation effect="fade" end="90" time="200" delay="0">Visible</animation>
+				<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+				<visible>Control.HasFocus(11000) | Control.HasFocus(11001)</visible>
+				<animation effect="fade" start="70" end="0" time="0" delay="00">WindowClose</animation>
+			</control>
+
+		</control>
+
 <!-- Second List for Severs -->
 
 		<control type="largeimage">
@@ -199,7 +219,7 @@
 
 		<control type="label">
 			<align>center</align>
-			<posx>69</posx>
+			<posx>79</posx>
 			<posy>388</posy>
 			<font>Font_RecentlyAdded</font>
 			<include>Animation_SubMenu</include>
@@ -254,7 +274,8 @@
 			</control>
 		</control>
 		<include>Furniture_Debug</include>
-		<include condition="!Skin.HasSetting(RecentlyAddedOff)">Viewtype_Poster_Half_Home</include>
+		<include condition="!Skin.HasSetting(RecentlyAddedOff) + Skin.HasSetting(lowermainmenu)">Viewtype_RecentlyAdded_Lower</include>
+		<include condition="!Skin.HasSetting(RecentlyAddedOff) + !Skin.HasSetting(lowermainmenu)">Viewtype_RecentlyAdded_Center</include>
 		<include>CerberosSmoke</include>
 	</controls>
 </window>
