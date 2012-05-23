@@ -1428,9 +1428,9 @@
 				<width>180</width>
 				<height>10</height>
 				<texturebg>list/progress_back.png</texturebg>
-				<lefttexture>list/progress_left.png</lefttexture>
-				<midtexture>list/progress_mid.png</midtexture>
-				<righttexture>list/progress_right.png</righttexture>
+				<lefttexture>list/blueprogress_left.png</lefttexture>
+				<midtexture>list/blueprogress_mid.png</midtexture>
+				<righttexture>list/blueprogress_right.png</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<info>Player.Progress</info>
 			</control>
