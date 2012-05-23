@@ -115,7 +115,8 @@
 					<altlabel>31204</altlabel>
 					<include>Objects_ContextMenuButton</include>
 					<onclick>Skin.Togglesetting(homevis)</onclick>
-					<usealttexture>Skin.HasSetting(homevis)</usealttexture>
+					<onclick>Plex.ReloadSkin</onclick>
+					<usealttexture>!Skin.HasSetting(homevis)</usealttexture>
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
 				</control>
