@@ -146,13 +146,13 @@
 
 	<string id="31200">SETTINGS</string> 
 	<string id="31201">AANPASSEN</string>
-	<string id="31202">ASSISTENT</string> 
+	<string id="31202">STOPZETTING</string> 
 	<string id="31203">HOME VISUALISATIE: UIT</string>
 	<string id="31204">HOME VISUALISATIE: AAN</string> 
 	<string id="31205">SPEELT NU</string>
 	<string id="31206">AFSLUIT TIMER</string> 
-	<string id="31207">HERSTART</string> 
-	<string id="31208">AFSLUITEN</string>
+	<string id="31207">SLAPEN</string> 
+	<string id="31208">VERLATEN</string>
 	<string id="31209">UITLOGGEN</string> 
 
 <!--  Set Content / Add Source dialogs  --> 
