@@ -65,6 +65,8 @@
 				<orientation>vertical</orientation>
 				<onup>4112</onup>
 				<ondown>4112</ondown>
+				<onright>SetFocus(300)</onright>
+ 				<onleft>SetFocus(300)</onleft>
 				<onright>Dialog.Close(1111)</onright>
  				<onleft>Dialog.Close(1111)</onleft>
 

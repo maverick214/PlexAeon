@@ -6,7 +6,7 @@
 	<controls>
 	<!-- Background_Wallpaper -->
     <control type="group">
-		<visible>Skin.HasSetting(NoCustomWeatherConditions)</visible>
+		<visible>true</visible>
 	    <animation effect="fade" time="1000"  start="80" end="80" reversible="true">WindowOpen</animation>
 
   		<control type="multiimage">
@@ -45,14 +45,14 @@
 		</control>
 
 	</control>
-
+<!--
 		<control type="multiimage">
 			<include>Background_ImageFolder</include>
 			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
 			<visible>!Skin.HasSetting(NoCustomWeatherConditions)</visible>
 	    <animation effect="fade" time="1000"  start="80" end="80" reversible="true">WindowOpen</animation>
 		</control>
-
+-->
 		<!--Background_Wallpaper end -->	
 		<include>Furniture_HomeNowPlaying</include>   
 

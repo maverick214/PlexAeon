@@ -29,8 +29,8 @@
 		<ondown>351</ondown>
 	</include>
 	<include name="MainMenu_Controls_Lower_Activate">
-		<onup>351</onup>
-		<ondown>XBMC.ActivateWindow(1111)</ondown>
+		<onup>350</onup>
+		<ondown>351</ondown>
 	</include>
 	<!-- Weather Backdrop by Current Weather Conditions -->
 	<include name="BackgroundVarsWeather2">
@@ -116,8 +116,8 @@
 			<visible>Container(300).HasFocus(9)</visible>
 		</control>
 		<control type="button" id="351">
-			<onfocus>SetFocus(11002)</onfocus>
-			<visible>[Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4)] + Control.IsVisible(11002)</visible>
+			<onfocus>XBMC.ActivateWindow(1111)</onfocus>
+			<visible>Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
@@ -134,29 +134,27 @@
 			<onfocus>SetFocus(946)</onfocus>
 			<visible>Container(300).HasFocus(12)</visible>
 		</control>
-		<control type="button" id="351">
+		<control type="button" id="350">
 			<onfocus>SetFocus(300)</onfocus>
 			<visible>!Control.IsVisible(11000) + !Control.IsVisible(11001) + !Control.IsVisible(11002) + !Control.IsVisible(11003)</visible>
 		</control>
-		<control type="button" id="351">
+		<control type="button" id="350">
 			<onfocus>SetFocus(11000)</onfocus>
-			<visible>Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11000)</visible>
+			<visible>Control.IsVisible(11000)</visible>
 		</control>
-		<control type="button" id="351">
+		<control type="button" id="350">
 			<onfocus>SetFocus(11001)</onfocus>
-			<visible>!Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11000) + Control.IsVisible(11001)</visible>
+			<visible>Control.IsVisible(11001)</visible>
 		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(11001)</onfocus>
-			<visible>!Control.IsVisible(11000) + !Control.IsVisible(11002) + !Control.IsVisible(11003)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(11000)</onfocus>
-			<visible>!Control.IsVisible(11001) + !Control.IsVisible(11002) + Control.IsVisible(11000) + !Control.IsVisible(11003)</visible>
-		</control>
-		<control type="button" id="351">
+		<control type="button" id="350">
 			<onfocus>SetFocus(11003)</onfocus>
 			<visible>Control.IsVisible(11003)</visible>
+		</control>
+
+
+		<control type="button" id="351">
+			<onfocus>XBMC.ActivateWindow(1111)</onfocus>
+			<visible>![Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4) | Container(300).HasFocus(22)]</visible>
 		</control>
 	</include>
 
@@ -260,7 +258,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
-<!--
+
 				<item id="10">
 					<description>Weather</description>
 					<label>31017</label>
@@ -271,7 +269,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
--->
+
 				<item id="9">
 					<label>31016</label>
 					<include>BackgroundVarsSettings</include>

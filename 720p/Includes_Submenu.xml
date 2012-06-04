@@ -13,225 +13,6 @@
 		<control type="button" id="352">
 			<onfocus>SetFocus(300)</onfocus>
 		</control>
-<!--
-		<control type="group">
-			<posx>79</posx>
-			<posy>406</posy>
-			<visible>ControlGroup(940).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<include>Animation_CommonFade</include>
-			<control type="image">
-				<width>1123</width>
-				<height>33</height>
-				<texture>home/submenubar_music.png</texture>
-			</control>
-
-			<control type="grouplist" id="940">
-				<posx>39</posx>
-				<width>1048</width>
-				<height>33</height>
-				<itemgap>0</itemgap>
-				<onup>300</onup>
-				<ondown>352</ondown>
-				<orientation>horizontal</orientation>
-				<control type="button" id="40">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>31920</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
-				</control>
-
-				<control type="button" id="41">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>32031</label>
-					<onclick>RunScript(U:/skin/Plexaeon/extras/OpenSubtitles_OSD/default.py)</onclick>
-				</control>
-				<control type="button" id="42">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>31922</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
-				</control>
-
-				<control type="button" id="43">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>31923</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
-				</control>
-
-				<control type="button" id="44">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>31924</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
-				</control>
-
-				<control type="button" id="45">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>31925</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors,return)</onclick>
-				</control>
-
-				<control type="button" id="46">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>31926</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviestudios,return)</onclick>
-				</control>
-				<control type="button" id="47">
-					<include>Submenu_Button</include>
-					<include>MovieShortcutBools</include>
-					<label>FILES</label>
-					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
-				</control>
-			</control>
-		</control>
- -->
-<!-- New Submenu -->
-<!--
-		<control type="group">
-			<posx>79</posx>
-			<posy>406</posy>
-			<visible>ControlGroup(941).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<include>Animation_CommonFade</include>
-			<control type="image">
-				<width>1123</width>
-				<height>33</height>
-				<texture>home/submenubar_music.png</texture>
-			</control>
-			<control type="grouplist" id="941">
-				<posx>39</posx>
-				<width>1048</width>
-				<height>33</height>
-				<itemgap>0</itemgap>
-				<onup>300</onup>
-				<ondown>352</ondown>
-				<scroll>false</scroll>
-				<orientation>horizontal</orientation>
-				<control type="button" id="40">
-			 	<include>Submenu_Button</include>  
-					<label>31941</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Most Played/)</onclick>
-				</control>
-
-				<control type="button" id="41">
-					<include>Submenu_Button</include>
-					<label>31927</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Artists/)</onclick>
-				</control>
-
-				<control type="button" id="42">
-					<include>Submenu_Button</include>
-					<label>31928</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Albums/)</onclick>
-				</control>
-
-				<control type="button" id="43">
-					<include>Submenu_Button</include>
-					<label>31922</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Genre/)</onclick>
-				</control>
-
-				<control type="button" id="44">
-					<include>Submenu_Button</include>
-					<label>31929</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/PlayLists/)</onclick>
-				</control>
-
-				<control type="button" id="45">
-					<include>Submenu_Button</include>
-					<label>31930</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Recently Played/)</onclick>
-				</control>
-
-				<control type="button" id="46">
-					<include>Submenu_Button</include>
-					<label>31940</label>
-					<onclick>ActivateWindow(visualisation)</onclick>
-				</control>
-
-				<control type="button" id="47">
-					<include>Submenu_Button</include>
-					<label>31939</label>
-					<onclick>ActivateWindow(10501,plex://localhost/music/shoutcast/)</onclick>
-				</control>
-
-			</control>
-		</control>
- -->
-<!--
-		<control type="group">
-			<posx>143</posx>
-			<posy>406</posy>
-			<visible>ControlGroup(942).HasFocus()</visible>
-			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<include>Animation_CommonFade</include>
-			<control type="image">
-				<width>994</width>
-				<height>33</height>
-				<texture>home/submenubar_movies.png</texture>
-			</control>
-
-			<control type="grouplist" id="942">
-				<posx>39</posx>
-				<width>917</width>
-				<height>33</height>
-				<itemgap>0</itemgap>
-				<onup>300</onup>
-				<ondown>352</ondown>
-				<orientation>horizontal</orientation>
-				<control type="button" id="40">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>31920</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
-				</control>
-
-				<control type="button" id="41">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>31933</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
-				</control>
-
-				<control type="button" id="42">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>31922</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
-				</control>
-
-				<control type="button" id="43">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>31924</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
-				</control>
-
-				<control type="button" id="44">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>31923</label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
-				</control>
-				<control type="button" id="45">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>HULU</label>
-					<onclick>ActivateWindow(10024,plex://localhost/video/hulu/)</onclick>
-				<control type="button" id="46">
-					<include>Submenu_Button</include>
-					<include>TVShortcutBools</include>
-					<label>FILES</label>
-					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
-				</control>
-			</control>
-		</control>
--->
 		<control type="group">
 
 			<posx>79</posx>
@@ -465,50 +246,50 @@
 				<orientation>horizontal</orientation>
 				<control type="button" id="40">
 			 	<include>Submenu_Button</include>  
-					<label>31950</label>
+					<label>What's New</label>
 					<onclick>ActivateWindow(10001,plex://localhost/system/appstore/new/,return)</onclick>
 				</control>
 
 				<control type="button" id="41">
 					<include>Submenu_Button</include>
-					<label>31951</label>
+					<label>Popular</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/popular/,return)</onclick>
 				</control>
 
 				<control type="button" id="42">
 					<include>Submenu_Button</include>
-					<label>31952</label>
+					<label>Categories</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/categories/,return)</onclick>
 				</control>
 
 				<control type="button" id="43">
 					<include>Submenu_Button</include>
-					<label>31953</label>
+					<label>Installed</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/installed/,return)</onclick>
 				</control>
 
 				<control type="button" id="44">
 					<include>Submenu_Button</include>
-					<label>31954</label>
+					<label>History</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/history/,return)</onclick>
 				</control>
 
 				<control type="button" id="45">
 					<include>Submenu_Button</include>
-					<label>31955</label>
+					<label>Media Types</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/types/,return)</onclick>
 				</control>
 
 
 				<control type="button" id="46">
 					<include>Submenu_Button</include>
-					<label>31956</label>
+					<label>All Plugins</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/apps/,return)</onclick>
 				</control>
 
 				<control type="button" id="47">
 					<include>Submenu_Button</include>
-					<label>31957</label>
+					<label>Featured</label>
 					<onclick>ActivateWindow(1,plex://localhost/system/appstore/featured/,return)</onclick>
 				</control>
 
