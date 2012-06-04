@@ -289,6 +289,15 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 				</item>
 -->
+				<item id="25">
+					<description>Script 1</description>
+					<include>BackgroundVarsScript1</include>
+					<label>$INFO[Skin.String(ScriptName1)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(script1)])</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn1)</visible>
+				</item>
+
 				<item id="13">
 					<description>Play DVD</description>
 					<include>BackgroundVarsPlayDVD</include>

@@ -179,6 +179,14 @@
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
 				</control>
+				<control type="button" id="815">
+					<description>Reboot Mac</description>
+					<label>31965</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Reboot</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
 
 				<control type="button" id="809">
 					<description>Quit Plex</description>

@@ -191,7 +191,6 @@
 			<onclick>Skin.SetPath(CustomFanartSlideshowFolder)</onclick>
             <visible>Skin.HasSetting(CustomFanartSlideshow) + Skin.HasSetting(FanartSlideshow)</visible>
           </control>
-
 			<control type="radiobutton" id="504">
 				<include>Objects_SettingsDefaultRadioButton</include>
 				<label>Lower Home Menu</label>
@@ -279,6 +278,31 @@
 					<onclick>Skin.SetFile(startuplocation)</onclick>
 					<visible>Skin.HasSetting(startplay)</visible>
 			</control>	
+
+<!-- Custom Scripts for Home Menu -->
+
+			<control type="radiobutton" id="529">
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<label>Assign a Custom Script as a Home Menu Button</label>
+					<onclick>Skin.ToggleSetting(ScriptOn1)</onclick>
+					<selected>Skin.HasSetting(ScriptOn1)</selected>
+			</control>
+ 
+			<control type="button" id="530">
+        		    <label>Name the Custom Script</label>
+					<label2>$INFO[Skin.String(ScriptName1)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetString(ScriptName1)</onclick>
+					<visible>Skin.HasSetting(ScriptOn1)</visible>
+         	</control>
+
+			<control type="button" id="531">
+        		    <label>$INFO[Skin.String(ScriptName1)]</label>
+					<label2>$INFO[Skin.String(Script1)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetFile(script1)</onclick>
+					<visible>Skin.HasSetting(ScriptOn1)</visible>
+         	</control>
 		</control>
 
 
