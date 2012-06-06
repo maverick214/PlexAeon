@@ -324,7 +324,7 @@
 			<visible>[Container.Content(Movies) + Skin.HasSetting(NoMovieFanart)] | [[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + Skin.HasSetting(NoTVFanart)] | [![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + Skin.HasSetting(curtains)]] + Skin.String(CustomCurtainsbg)</visible>
 		</control>
 	</include>
-
+<!--
 	<include name="Background_Wallpaper">
  		<control type="visualisation">
 			<include>FullscreenDimensions</include>
@@ -371,9 +371,8 @@
 			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
 			<visible>System.Date(09-23,12-21)</visible>
 		</control>
-
 	</include>
-
+-->
 	<include name="Background_Wallpaper">
 <!--
 		<control type="visualisation">
@@ -739,6 +738,41 @@
 			<visible>Skin.String(CustomWeatherFolder)</visible>
 		</control>
 </control>
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/winter</imagepath>
+			<info>Skin.String(CustomWeatherbg)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
+			<visible>System.Date(12-21,03-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/spring</imagepath>
+			<info>Skin.String(CustomWeatherbg)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
+			<visible>System.Date(03-21,06-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/summer</imagepath>
+			<info>Skin.String(CustomWeatherbg)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
+			<visible>System.Date(06-21,09-23)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/autumn</imagepath>
+			<info>Skin.String(CustomWeatherbg)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
+			<visible>System.Date(09-23,12-21)</visible>
+		</control>
 
 		<control type="multiimage">
 			<include>Background_ImageFolder</include>
