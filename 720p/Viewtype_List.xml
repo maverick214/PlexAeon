@@ -149,7 +149,6 @@
 		<onright>61</onright>
 		<onup>50</onup>
 		<ondown>50</ondown>
-		<visible>Control.IsVisible(50)</visible>
 		<itemlayout height="43">
 			<control type="largeimage">
 				<posx>0</posx>
@@ -476,7 +475,7 @@
 	</control>
 
 	<control type="textbox">
-		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + !Container.Content(plugincontent) + !Container.Content(plugins)</visible>
+		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(clip)</visible>
 		<posy>83</posy>
 		<posx>870</posx>
 		<height>55</height>
@@ -489,10 +488,10 @@
 	  <include>Animation_CommonFade</include>
 	</control>
 	<control type="textbox">
-		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + [Container.Content(plugincontent) | Container.Content(plugins)]</visible>
+		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + [Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(clip)]</visible>
 		<posy>400</posy>
 		<posx>870</posx>
-		<height>188</height>
+		<height>162</height>
 		<width>400</width>
 		<font>Font_FSInfoPlot</font>
 		<textcolor>d0ffffff</textcolor>
@@ -786,7 +785,7 @@
 	<control type="group">
 		<posx>95</posx>
 		<posy>8</posy>
-		<visible>[Container.Content(plugincontent) | Container.Content(plugins) | Container.content(secondary)] + !Window.IsActive(2) + !Window.IsVisible(501)</visible>
+		<visible>[Container.Content(clip) | Container.content(secondary)] + !Window.IsActive(2) + !Window.IsVisible(501)</visible>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="500" />
 			<effect type="slide" start="300,0" end="0,0" time="500" easing="out" tween="quadratic" acceleration="-1" />

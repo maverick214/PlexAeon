@@ -2790,7 +2790,7 @@
 			<onclick>Skin.ToggleSetting(ForceLowList)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
 			<selected>Skin.HasSetting(ForceLowList)</selected>
-			<visible>[Container.Content(plugin) | Container.Content(plugincontent)] + Window.IsVisible(24)</visible>
+			<visible>[Container.Content(plugin) | Container.Content(plugincontent) | Container.Content(clip)] + Window.IsVisible(24)</visible>
 		</control>
 	</include>
 -->
