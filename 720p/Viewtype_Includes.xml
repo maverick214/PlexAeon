@@ -2782,6 +2782,7 @@
 			<visible>Container.Content(TVShows) + Control.IsVisible(512)</visible>
 		</control>
 	</include>
+<!--
 	<include name="MediaMenuButton_ForceLowList">
 		<control type="radiobutton" id="700046">
 			<label>FORCE LOW LIST</label>
@@ -2789,9 +2790,10 @@
 			<onclick>Skin.ToggleSetting(ForceLowList)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
 			<selected>Skin.HasSetting(ForceLowList)</selected>
-			<visible>[Container.Content(plugins) | Container.Content(plugincontent)] + Window.IsVisible(24)</visible>
+			<visible>[Container.Content(plugin) | Container.Content(plugincontent)] + Window.IsVisible(24)</visible>
 		</control>
 	</include>
+-->
 	<include name="MediaMenuButton_MediaDebug">
 		<control type="button" id="700047">
 			<label>31607</label>

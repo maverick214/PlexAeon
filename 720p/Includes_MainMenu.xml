@@ -253,7 +253,7 @@
 				<item id="2">
 					<label>$LOCALIZE[31972]</label>
 					<include>BackgroundVarsMusic</include>
-					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
+					<onclick>Plex.ActivateWindow(5)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>

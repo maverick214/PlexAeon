@@ -1,7 +1,7 @@
 <window id="501">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>550,50,54,57,523,551,52</views>
+	<views>50,550,57,523,551,52</views>
 	<controls>
 <!--
 		<control type="multiimage">
@@ -46,7 +46,6 @@
 			<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
 			<include condition="!Skin.HasSetting(WallOff)">Viewtype_MusicWall</include>
 			<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include>
-			<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
 			<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
 			<include>NewMediaMenu</include>
 			<include>ScrollOffsetLabel</include>
