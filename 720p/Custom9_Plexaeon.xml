@@ -112,15 +112,13 @@
 				</control>
 -->
 				<control type="togglebutton" id="804">
-					<description>Home Visualiser</description>
-					<label>31203</label>
-					<altlabel>31204</altlabel>
+					<description>Custom Script</description>
+					<label>$INFO[Skin.String(ContextScriptName1)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(Contextscript1)])</onclick>
 					<include>Objects_ContextMenuButton</include>
-					<onclick>Skin.Togglesetting(homevis)</onclick>
-					<onclick>Plex.ReloadSkin</onclick>
-					<usealttexture>!Skin.HasSetting(homevis)</usealttexture>
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+					<visible>Skin.HasSetting(ContextScriptOn1)</visible>
 				</control>
 
 				<control type="button" id="805">

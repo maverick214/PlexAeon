@@ -303,6 +303,30 @@
 					<onclick>Skin.SetFile(script1)</onclick>
 					<visible>Skin.HasSetting(ScriptOn1)</visible>
          	</control>
+<!-- Custom Scripts for Context -->
+
+			<control type="radiobutton" id="540">
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<label>Assign a Custom Script as a Context Menu Button</label>
+					<onclick>Skin.ToggleSetting(ContextScriptOn1)</onclick>
+					<selected>Skin.HasSetting(ContextScriptOn1)</selected>
+			</control>
+ 
+			<control type="button" id="541">
+        		    <label>Name the Custom Script</label>
+					<label2>$INFO[Skin.String(ContextScriptName1)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetString(ContextScriptName1)</onclick>
+					<visible>Skin.HasSetting(ContextScriptOn1)</visible>
+         	</control>
+
+			<control type="button" id="542">
+        		    <label>$INFO[Skin.String(ContextScriptName1)]</label>
+					<label2>$INFO[Skin.String(ContextScript1)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetFile(Contextscript1)</onclick>
+					<visible>Skin.HasSetting(ContextScriptOn1)</visible>
+         	</control>
 		</control>
 
 
