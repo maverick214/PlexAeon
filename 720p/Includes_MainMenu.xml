@@ -291,13 +291,45 @@
 -->
 				<item id="25">
 					<description>Script 1</description>
-					<include>BackgroundVarsScript1</include>
 					<label>$INFO[Skin.String(ScriptName1)]</label>
+					<include>BackgroundVarsScript1</include>
 					<onclick>Plex.RunScript($INFO[Skin.String(script1)])</onclick>
 					<width min="95" max="95">auto</width>
-					<visible>Skin.HasSetting(ScriptOn1)</visible>
+					<visible>Skin.HasSetting(ScriptOn1) + !IsEmpty(Skin.String(ScriptName1))</visible>
 				</item>
 
+				<item id="26">
+					<description>Script 2</description>
+					<include>BackgroundVarsScript2</include>
+					<label>$INFO[Skin.String(ScriptName2)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(script2)])</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn2) + !IsEmpty(Skin.String(ScriptName2))</visible>
+				</item>
+				<item id="27">
+					<description>Script 3</description>
+					<include>BackgroundVarsScript3</include>
+					<label>$INFO[Skin.String(ScriptName3)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(script3)])</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn3) + !IsEmpty(Skin.String(ScriptName3))</visible>
+				</item>
+				<item id="28">
+					<description>Script 4</description>
+					<include>BackgroundVarsScript4</include>
+					<label>$INFO[Skin.String(ScriptName4)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(script4)])</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn4) + !IsEmpty(Skin.String(ScriptName4))</visible>
+				</item>
+				<item id="29">
+					<description>Script 5</description>
+					<include>BackgroundVarsScript5</include>
+					<label>$INFO[Skin.String(ScriptName5)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(script5)])</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn5) + !IsEmpty(Skin.String(ScriptName5))</visible>
+				</item>
 				<item id="13">
 					<description>Play DVD</description>
 					<include>BackgroundVarsPlayDVD</include>
@@ -490,6 +522,57 @@
 					<visible>Skin.HasSetting(signout)</visible>
 				</item>
 -->
+<!-- Custom Scripts -->
+
+				<item id="25">
+					<description>Script 1</description>
+					<label>$INFO[Skin.String(ScriptName1)]</label>
+					<include>BackgroundVarsScript1</include>
+					<onclick>Skin.SetString(custom,CustomScripts1folder)</onclick>
+					<onclick>SetFocus(92)</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn1) + !IsEmpty(Skin.String(ScriptName1))</visible>
+				</item>
+
+				<item id="26">
+					<description>Script 2</description>
+					<label>$INFO[Skin.String(ScriptName2)]</label>
+					<include>BackgroundVarsScript2</include>
+					<onclick>Skin.SetString(custom,CustomScripts2folder)</onclick>
+					<onclick>SetFocus(92)</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn2) + !IsEmpty(Skin.String(ScriptName2))</visible>
+				</item>
+				<item id="27">
+					<description>Script 3</description>
+					<label>$INFO[Skin.String(ScriptName3)]</label>
+					<include>BackgroundVarsScript3</include>
+					<onclick>Skin.SetString(custom,CustomScripts3folder)</onclick>
+					<onclick>SetFocus(92)</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn3) + !IsEmpty(Skin.String(ScriptName3))</visible>
+				</item>
+				<item id="28">
+					<description>Script 4</description>
+					<label>$INFO[Skin.String(ScriptName4)]</label>
+					<include>BackgroundVarsScript4</include>
+					<onclick>Skin.SetString(custom,CustomScripts4folder)</onclick>
+					<onclick>SetFocus(92)</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn4) + !IsEmpty(Skin.String(ScriptName4))</visible>
+				</item>
+				<item id="29">
+					<description>Script 5</description>
+					<label>$INFO[Skin.String(ScriptName5)]</label>
+					<include>BackgroundVarsScript5</include>
+					<onclick>Skin.SetString(custom,CustomScripts5folder)</onclick>
+					<onclick>SetFocus(92)</onclick>
+					<width min="95" max="95">auto</width>
+					<visible>Skin.HasSetting(ScriptOn5) + !IsEmpty(Skin.String(ScriptName5))</visible>
+				</item>
+
+<!-- End custom scripts -->
+
 				<item id="22">
 					<description>Shutdown</description>
 					<label>31019</label>

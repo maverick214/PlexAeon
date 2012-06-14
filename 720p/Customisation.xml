@@ -283,13 +283,13 @@
 
 			<control type="radiobutton" id="529">
 					<include>Objects_SettingsDefaultRadioButton</include>
-					<label>Assign a Custom Script as a Home Menu Button</label>
+					<label>Assign Custom Script #1 as a Home Menu Button</label>
 					<onclick>Skin.ToggleSetting(ScriptOn1)</onclick>
 					<selected>Skin.HasSetting(ScriptOn1)</selected>
 			</control>
  
 			<control type="button" id="530">
-        		    <label>Name the Custom Script</label>
+        		    <label> - Name of Custom Script</label>
 					<label2>$INFO[Skin.String(ScriptName1)]</label2>
 					<include>Objects_SettingsDefaultRadioButton</include>
 					<onclick>Skin.SetString(ScriptName1)</onclick>
@@ -297,11 +297,101 @@
          	</control>
 
 			<control type="button" id="531">
-        		    <label>$INFO[Skin.String(ScriptName1)]</label>
+        		    <label> - Location: </label>
 					<label2>$INFO[Skin.String(Script1)]</label2>
 					<include>Objects_SettingsDefaultRadioButton</include>
 					<onclick>Skin.SetFile(script1)</onclick>
-					<visible>Skin.HasSetting(ScriptOn1)</visible>
+					<visible>Skin.HasSetting(ScriptOn1) + !IsEmpty(Skin.String(ScriptName1))</visible>
+         	</control>
+         	
+			<control type="radiobutton" id="543">
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<label>Assign Custom Script #2 as a Home Menu Button</label>
+					<onclick>Skin.ToggleSetting(ScriptOn2)</onclick>
+					<selected>Skin.HasSetting(ScriptOn2)</selected>
+			</control>
+ 
+			<control type="button" id="544">
+        		    <label> - Name of Custom Script</label>
+					<label2>$INFO[Skin.String(ScriptName2)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetString(ScriptName2)</onclick>
+					<visible>Skin.HasSetting(ScriptOn2)</visible>
+         	</control>
+
+			<control type="button" id="545">
+        		    <label> - Location: </label>
+					<label2>$INFO[Skin.String(Script2)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetFile(script2)</onclick>
+					<visible>Skin.HasSetting(ScriptOn2) + !IsEmpty(Skin.String(ScriptName2))</visible>
+         	</control>
+         	
+			<control type="radiobutton" id="546">
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<label>Assign Custom Script #3 as a Home Menu Button</label>
+					<onclick>Skin.ToggleSetting(ScriptOn3)</onclick>
+					<selected>Skin.HasSetting(ScriptOn3)</selected>
+			</control>
+ 
+			<control type="button" id="547">
+        		    <label> - Name of Custom Script</label>
+					<label2>$INFO[Skin.String(ScriptName3)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetString(ScriptName3)</onclick>
+					<visible>Skin.HasSetting(ScriptOn3)</visible>
+         	</control>
+
+			<control type="button" id="548">
+        		    <label> - Location: </label>
+					<label2>$INFO[Skin.String(Script3)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetFile(script3)</onclick>
+					<visible>Skin.HasSetting(ScriptOn3) + !IsEmpty(Skin.String(ScriptName3))</visible>
+         	</control>
+			<control type="radiobutton" id="549">
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<label>Assign Custom Script #4 as a Home Menu Button</label>
+					<onclick>Skin.ToggleSetting(ScriptOn4)</onclick>
+					<selected>Skin.HasSetting(ScriptOn4)</selected>
+			</control>
+ 
+			<control type="button" id="550">
+        		    <label> - Name of Custom Script</label>
+					<label2>$INFO[Skin.String(ScriptName4)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetString(ScriptName4)</onclick>
+					<visible>Skin.HasSetting(ScriptOn4)</visible>
+         	</control>
+
+			<control type="button" id="551">
+        		    <label> - Location: </label>
+					<label2>$INFO[Skin.String(Script4)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetFile(script4)</onclick>
+					<visible>Skin.HasSetting(ScriptOn4) + !IsEmpty(Skin.String(ScriptName4))</visible>
+         	</control>
+			<control type="radiobutton" id="552">
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<label>Assign Custom Script #5 as a Home Menu Button</label>
+					<onclick>Skin.ToggleSetting(ScriptOn5)</onclick>
+					<selected>Skin.HasSetting(ScriptOn5)</selected>
+			</control>
+ 
+			<control type="button" id="553">
+        		    <label> - Name of Custom Script</label>
+					<label2>$INFO[Skin.String(ScriptName5)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetString(ScriptName5)</onclick>
+					<visible>Skin.HasSetting(ScriptOn5)</visible>
+         	</control>
+
+			<control type="button" id="554">
+        		    <label> - Location: </label>
+					<label2>$INFO[Skin.String(Script5)]</label2>
+					<include>Objects_SettingsDefaultRadioButton</include>
+					<onclick>Skin.SetFile(script5)</onclick>
+					<visible>Skin.HasSetting(ScriptOn5) + !IsEmpty(Skin.String(ScriptName5))</visible>
          	</control>
 <!-- Custom Scripts for Context -->
 
@@ -313,20 +403,21 @@
 			</control>
  
 			<control type="button" id="541">
-        		    <label>Name the Custom Script</label>
-					<label2>$INFO[Skin.String(ContextScriptName1)]</label2>
+        		    <label> - Name the Custom Script</label>
+					<label2> - $INFO[Skin.String(ContextScriptName1)]</label2>
 					<include>Objects_SettingsDefaultRadioButton</include>
 					<onclick>Skin.SetString(ContextScriptName1)</onclick>
 					<visible>Skin.HasSetting(ContextScriptOn1)</visible>
          	</control>
 
 			<control type="button" id="542">
-        		    <label>$INFO[Skin.String(ContextScriptName1)]</label>
+        		    <label> - $INFO[Skin.String(ContextScriptName1)]</label>
 					<label2>$INFO[Skin.String(ContextScript1)]</label2>
 					<include>Objects_SettingsDefaultRadioButton</include>
 					<onclick>Skin.SetFile(Contextscript1)</onclick>
 					<visible>Skin.HasSetting(ContextScriptOn1)</visible>
          	</control>
+
 		</control>
 
 

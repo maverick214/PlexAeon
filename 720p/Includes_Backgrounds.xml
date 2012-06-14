@@ -203,6 +203,11 @@
 		<info>Skin.String(CustomSignOutbg)</info>
 	</include>
 -->
+	<include name="BackgroundVarsScript1">
+		<icon>backdrops/default_script/default.png</icon>
+		<thumb>$INFO[Skin.String(CustomScripts1folder)]</thumb>
+		<imagepath>backdrops/default_script/default.png</imagepath>
+	</include>
 	<include name="BackgroundVarsShutdown">
 		<icon>backdrops/default_shutdown/default.png</icon>
 		<thumb>$INFO[Skin.String(CustomShutdownbg)]</thumb>
@@ -990,6 +995,110 @@
 			<visible>Skin.String(CustomScriptsFolder)</visible>
 		</control>
 -->
+
+<!-- Custom Scripts -->
+
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>backdrops/default_scripts/scripts.jpg</texture>
+			<info>Skin.String(CustomScripts1)</info>
+			<visible>Container(300).HasFocus(25) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomScripts1Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomScripts1Folder)</info>
+			<randomize>true</randomize>
+			<visible>Container(300).HasFocus(25) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomScripts1Folder)</visible>
+		</control>
+
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>backdrops/default_scripts/scripts.jpg</texture>
+			<info>Skin.String(CustomScripts2)</info>
+			<visible>Container(300).HasFocus(26) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomScripts2Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomScripts2Folder)</info>
+			<randomize>true</randomize>
+			<visible>Container(300).HasFocus(26) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomScripts2Folder)</visible>
+		</control>
+
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>backdrops/default_scripts/scripts.jpg</texture>
+			<info>Skin.String(CustomScripts3)</info>
+			<visible>Container(300).HasFocus(27) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomScripts3Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomScripts3Folder)</info>
+			<randomize>true</randomize>
+			<visible>Container(300).HasFocus(27) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomScripts3Folder)</visible>
+		</control>
+
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>backdrops/default_scripts/scripts.jpg</texture>
+			<info>Skin.String(CustomScripts4)</info>
+			<visible>Container(300).HasFocus(28) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomScripts4Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomScripts4Folder)</info>
+			<randomize>true</randomize>
+			<visible>Container(300).HasFocus(28) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomScripts4Folder)</visible>
+		</control>
+
+		<control type="largeimage">
+			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="0" time="600">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>backdrops/default_scripts/scripts.jpg</texture>
+			<info>Skin.String(CustomScripts5)</info>
+			<visible>Container(300).HasFocus(29) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomScripts5Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomScripts5Folder)</info>
+			<randomize>true</randomize>
+			<visible>Container(300).HasFocus(29) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomScripts5Folder)</visible>
+		</control>
+<!-- End custom Scripts  -->
+
 		<control type="multiimage">
 			<include>Background_SingleImage</include>
 			<imagepath>backdrops/default_disc</imagepath>
@@ -1368,6 +1477,80 @@
 			<visible>Skin.String(CustomSignOutFolder)</visible>
 		</control>
 -->
+<!-- Custom scripts -->
+
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_script</imagepath>
+			<info>Skin.String(CustomScript1)</info>
+			<visible>[Container(301).HasFocus(25) + Control.IsVisible(301)] | [Container(300).HasFocus(25) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomScrip1Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomScripts1Folder)</info>
+			<visible>[Container(301).HasFocus(25) + Control.IsVisible(301)] | [Container(300).HasFocus(25) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomScripts1Folder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_script</imagepath>
+			<info>Skin.String(CustomScript2)</info>
+			<visible>[Container(301).HasFocus(26) + Control.IsVisible(301)] | [Container(300).HasFocus(26) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomScripts2Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomScripts2Folder)</info>
+			<visible>[Container(301).HasFocus(26) + Control.IsVisible(301)] | [Container(300).HasFocus(26) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomScripts2Folder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_script</imagepath>
+			<info>Skin.String(CustomScript3)</info>
+			<visible>[Container(301).HasFocus(27) + Control.IsVisible(301)] | [Container(300).HasFocus(27) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomScripts3Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomScripts3Folder)</info>
+			<visible>[Container(301).HasFocus(27) + Control.IsVisible(301)] | [Container(300).HasFocus(27) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomScripts3Folder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_script</imagepath>
+			<info>Skin.String(CustomScript4)</info>
+			<visible>[Container(301).HasFocus(28) + Control.IsVisible(301)] | [Container(300).HasFocus(28) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomScripts4Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomScripts4Folder)</info>
+			<visible>[Container(301).HasFocus(28) + Control.IsVisible(301)] | [Container(300).HasFocus(28) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomScript4Folder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_script</imagepath>
+			<info>Skin.String(CustomScript5)</info>
+			<visible>[Container(301).HasFocus(29) + Control.IsVisible(301)] | [Container(300).HasFocus(29) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomScripts5Folder)</visible>
+		</control>
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomScripts5Folder)</info>
+			<visible>[Container(301).HasFocus(29) + Control.IsVisible(301)] | [Container(300).HasFocus(29) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomScript1Folder)</visible>
+		</control>
+<!-- End custom Scripts -->
+
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_shutdown</imagepath>
