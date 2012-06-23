@@ -10,7 +10,7 @@
 	<include name="Background_SingleImage">
 		<include>FullscreenDimensions</include>
         <visible>![Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]</visible>
-		<include>Animation_BackgroundFade</include>
+		<animation effect="fade" start="0" end="100" time="2100" delay="170">Visible</animation>
 	</include>
 
 	<include name="Background_ImageFolder">
@@ -23,10 +23,10 @@
 		<fadetime>1000</fadetime>
 		<randomize>true</randomize>
         <visible>![Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]</visible>
-		<animation effect="fade" start="20" end="100" time="800">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="2100" delay="170">Visible</animation>
 		<animation effect="fade" end="0" time="600">Hidden</animation>
 	</include>
-<include name="Background_VirtualSingleImage">
+	<include name="Background_VirtualSingleImage">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>840</width>
@@ -809,7 +809,7 @@
 		</control>
 			
 		<control type="largeimage">
-			<animation effect="fade" end="100" time="600">Visible</animation>
+			<animation effect="fade" end="100" time="600" delay="50">Visible</animation>
 			<animation effect="fade" end="0" time="600">Hidden</animation>
 			<posx>0</posx>
 			<posy>0</posy>
