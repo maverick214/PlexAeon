@@ -11,6 +11,9 @@
       <visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(451)</visible>
   </include>
   
+  <include name="OnDown11003or11004">
+      <visible>Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(451)</visible>
+  </include>
 
 	<include name="Viewtype_RecentlyAdded_Center">
 
@@ -141,23 +144,8 @@
 			</control>	
 			</focusedlayout>
 		</control>
-<!--
-			<control type="label">
-				<posx>338</posx>
-				<posy>380</posy>
-				<width>610</width>
-				<height>20</height>
-				<align>justify</align>
-				<font>Font_Bold24</font>
-				<textcolor>FFe1e1e1</textcolor>
-				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-				<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
-	            <label>[UPPERCASE]$INFO[Container(11002).ListItem(0).Label][/UPPERCASE]</label>
-				<visible>Control.HasFocus(11002)</visible>
-			</control>
--->
-		</control>
-		</control>
+	</control>
+	</control>
 
 <!-- Queue for 11003-->
 
@@ -172,7 +160,7 @@
 			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
 			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11004) | !Control.HasFocus(11003)">Conditional</animation>
 			<include>Animation_CommonFade</include>
-			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11004or11003</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11003or11004</include>
 
 		<control type="largeimage">
 			<posx>460</posx>
@@ -277,7 +265,7 @@
 			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
 			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11003) | !Control.HasFocus(11004)">Conditional</animation>
 			<include>Animation_CommonFade</include>
-			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11004or11001</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11003or11004</include>
 
 		<control type="largeimage">
 			<posx>460</posx>
@@ -352,159 +340,6 @@
 			</focusedlayout>
 		</control>
 		</control>
-
-
-<!--
-	<control type="group">
-			<animation effect="fade" start="100" end="80" time="0" condition="!Control.HasFocus(11003)">Conditional</animation>
-			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
-			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11003</include>
-				
-	<control type="group">
-			<visible>Control.IsVisible(11003)</visible>
-			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
-			<include>Animation_CommonFade</include>
-
-		<control type="largeimage">
-			<posx>460</posx>
-			<posy>419</posy>
-			<width>440</width>
-			<height>20</height>
-			<texture flipx="true">common/rssbar_mid.png</texture>
-			<visible>!Control.HasFocus(11003) + Control.IsVisible(11003)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>460</posx>
-			<posy>419</posy>
-			<width>440</width>
-			<height>20</height>
-			<texture flipx="true">common/newpanel_mid.png</texture>
-			<animation effect="fade" start="100" end="0" time="700">Hidden</animation>
-			<visible>Control.HasFocus(11003) + Control.IsVisible(11003)</visible>
-		</control>
-		<control type="label">
-			<posx>870</posx>
-			<posy>420</posy>
-			<width>400</width>
-			<font>Font_RecentlyAdded</font>
-			<align>right</align>
-			<label>[COLOR FFFFFFFF][UPPERCASE]MY PLEX QUEUE[/UPPERCASE][/COLOR]</label>
-			<visible>Control.IsVisible(11003) + Control.IsVisible(11003)</visible>
-		</control>
-				
-		<control type="fixedlist" id="11003">
-			<posx>-50</posx>
-			<posy>214</posy>
-			<height>615</height>
-			<width>1300</width>
-			<onleft>11003</onleft>
-			<onright>11003</onright>
-			<onup>300</onup>
-			<ondown>300</ondown>
-			<viewtype label="Poster Half">list</viewtype>
-			<orientation>horizontal</orientation>
-			<focusposition>0</focusposition>
-			<scrolltime>400</scrolltime>
-			<preloaditems>2</preloaditems>
-			<animation effect="zoom" center="auto" start="100" end="45" time="0" condition="true">Conditional</animation>
-			<itemlayout width="330" height="245">
-				<control type="group">
-				<posx>130</posx>
-				<posy>0</posy>
-
-					<control type="largeimage">
-						<posx>-149</posx>
-						<posy>131</posy>
-						<width>300</width>
-						<height>220</height>
-						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
-						<fadetime>200</fadetime>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<visible>true</visible>
-					</control>
-
-				</control>
-				</itemlayout>
-			<focusedlayout width="370" height="515">
-				<control type="group">
-				<posx>30</posx>
-				<posy>0</posy>
-
-					<control type="largeimage">
-						<posx>-48</posx>
-						<posy>115</posy>
-						<width>300</width>
-						<height>210</height>
-						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
-						<fadetime>200</fadetime>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="80" end="130" time="600" tween="back" easing="out" />
-						</animation>
-						<visible>true</visible>
-					</control>
-			</control>	
-			</focusedlayout>
-		</control>
-		</control>
-
-		<control type="group">
-			<visible>Control.HasFocus(11003)</visible>
-			<animation effect="fade" start="0" end="100" time="200" delay="1300">Visible</animation>
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>Animation_HiddenByInfo</include>
-
-			<control type="label">
-				<posx>310</posx>
-				<posy>140</posy>
-				<width>610</width>
-				<height>20</height>
-				<align>justify</align>
-				<font>Font_Bold24</font>
-				<textcolor>FFe1e1e1</textcolor>
-	            <label>[UPPERCASE]$INFO[Container(11003).ListItem(0).Label][/UPPERCASE]</label>
-				<visible>Control.HasFocus(11003)</visible>
-			</control>
-			<control type="label">
-				<posx>310</posx>
-				<posy>165</posy>
-				<width>610</width>
-				<height>20</height>
-				<align>justify</align>
-				<font>Font_Bold24</font>
-				<textcolor>FFe1e1e1</textcolor>
-	            <label>[UPPERCASE]$INFO[Container(11003).ListItem.Property(sourceTitle)][/UPPERCASE]</label>
-				<visible>Control.HasFocus(11003) + IsEmpty(Container(11003).ListItem.Duration)</visible>
-			</control>
-			<control type="label">
-				<posx>310</posx>
-				<posy>165</posy>
-				<width>610</width>
-				<height>20</height>
-				<align>justify</align>
-				<font>Font_Bold24</font>
-				<textcolor>FFe1e1e1</textcolor>
-	            <label>[UPPERCASE]$INFO[Container(11003).ListItem.Property(sourceTitle)] • $INFO[Container(11003).ListItem.Duration][/UPPERCASE]</label>
-				<visible>Control.HasFocus(11003) + !IsEmpty(Container(11003).ListItem.Duration)</visible>
-			</control>
-			<control type="textbox">
-				<description>Plot Movie</description>
-				<posx>310</posx>
-				<posy>220</posy>
-				<width>610</width>
-				<height>168</height>
-				<align>justify</align>
-				<label>$INFO[Container(11003).ListItem(0).Plot]</label>
-				<font>Font_Reg18</font>
-				<textcolor>ffffffff</textcolor>
-				<autoscroll time="3000" delay="5000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
-				<visible>Control.HasFocus(11003)</visible>
-			</control>
-		</control>
-		</control>
--->
 
 			  <!-- TV Movies ON DECK -->
 		<control type="group">
