@@ -151,12 +151,16 @@
 			<visible>Control.IsVisible(11001)</visible>
 		</control>
 		<control type="button" id="350">
+			<onfocus>SetFocus(11002)</onfocus>
+			<visible>Control.IsVisible(11002)</visible>
+		</control>
+		<control type="button" id="350">
 			<onfocus>SetFocus(11003)</onfocus>
 			<visible>Control.IsVisible(11003)</visible>
 		</control>
 		<control type="button" id="350">
-			<onfocus>SetFocus(11002)</onfocus>
-			<visible>Control.IsVisible(11002)</visible>
+			<onfocus>SetFocus(11004)</onfocus>
+			<visible>Control.IsVisible(11004)</visible>
 		</control>
 
 

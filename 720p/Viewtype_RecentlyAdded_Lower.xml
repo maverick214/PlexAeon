@@ -1,7 +1,7 @@
 <includes>
 
   <include name="OnDown11003">
-     <visible>Control.HasFocus(11003)</visible>
+     <visible>Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(451)</visible>
   </include>
 
   <include name="OnDown11002">
@@ -319,7 +319,7 @@
 
 	<control type="group">
 			<animation effect="fade" start="100" end="80" time="0" condition="!Control.HasFocus(11004)">Conditional</animation>
-			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11004</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11003</include>
 				
 	<control type="group">
 			<visible>Control.IsVisible(11004)</visible>
