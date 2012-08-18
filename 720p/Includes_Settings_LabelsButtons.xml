@@ -164,7 +164,7 @@
 			</control>
 
 		</control>
-
+<!--
 		<control type="group">
 
 			<description>Settings Labels - Tier 1: Weather</description>
@@ -181,7 +181,7 @@
 			</control>
 
 		</control>
-
+-->
 		<control type="group">
 
 			<description>Settings Labels - Tier 1: Customisation Options</description>
@@ -1149,7 +1149,7 @@
 				<label>31140</label>
 				<onclick>ActivateWindow(MyVideosSettings)</onclick>
 				<include>Objects_SettingsSectionMenuButton</include>
-				<onup>10</onup>
+				<onup>3</onup>
 				<ondown>7</ondown>
 				<onfocus>Skin.Reset(bmtransit)</onfocus>
 			</control>
@@ -1348,7 +1348,7 @@
 				<onclick>ActivateWindow(AppearanceSettings)</onclick>
 				<include>Objects_SettingsSectionMenuButton</include>
 				<onup>4</onup>
-				<ondown>10</ondown>
+				<ondown>6</ondown>
 			</control>
 
 			<control type="label">
@@ -1368,6 +1368,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>Control.HasFocus(3)</visible>
 			</control>
+<!--
 			<control type="button" id="10">
 				<description>My Weather</description>
 				<posy>348</posy>
@@ -1396,6 +1397,7 @@
 				<visible>Control.HasFocus(10)</visible>
 			</control>
 
+-->
 <!--
 			<control type="button" id="12">
 				<description>Backdrops Settings</description>

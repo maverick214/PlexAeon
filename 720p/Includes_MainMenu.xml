@@ -270,7 +270,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
-
+<!--
 				<item id="10">
 					<description>Weather</description>
 					<label>31017</label>
@@ -281,7 +281,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
-
+-->
 				<item id="9">
 					<label>31016</label>
 					<include>BackgroundVarsSettings</include>
@@ -494,7 +494,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>true</visible>
 				</item>
-
+<!--
 				<item id="10">
 					<description>Weather</description>
 					<label>31017</label>
@@ -504,7 +504,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
-
+-->
 				<item id="13">
 					<description>Play DVD</description>
 					<label>31018</label>
@@ -828,7 +828,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(novideos)</visible>
 				</item>
-
+<!--
 				<item id="10">
 					<label2>31017</label2>
 					<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include>
@@ -847,6 +847,7 @@
 					<onclick>Skin.SetBool(noweather)</onclick>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
+-->
 <!--
 				<item id="24">
 					<description>My Scripts</description>
