@@ -1712,7 +1712,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
-
+<!--
 			<control type="label">
 				<description>My Weather Sub Unfocused</description>
 				<posy>264</posy>
@@ -1730,7 +1730,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(34)</visible>
 			</control>
-
+-->
 		</control>
 
 		<control type="group">
@@ -1809,7 +1809,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
-
+<!--
 			<control type="label">
 				<description>My Weather Sub Unfocused</description>
 				<posy>264</posy>
@@ -1827,7 +1827,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(34)</visible>
 			</control>
-
+-->
 		</control>
 
 		<control type="group">
@@ -1924,7 +1924,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
-
+<!--
 			<control type="label">
 				<description>My Weather Sub Unfocused</description>
 				<posy>322</posy>
@@ -1942,7 +1942,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(34)</visible>
 			</control>
-
+-->
 		</control>
 
 		<control type="group">
@@ -2021,7 +2021,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
--->
+
 			<control type="label">
 				<description>My Weather Sub Unfocused</description>
 				<posy>264</posy>
@@ -2039,7 +2039,7 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(34)</visible>
 			</control>
-
+-->
 			<control type="label">
 				<description>My Network Sub Unfocused</description>
 				<posy>322</posy>
