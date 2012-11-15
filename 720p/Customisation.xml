@@ -564,7 +564,7 @@
 		<control type="grouplist" id="14">
 			<include>Objects_SettingsControlAreaVars</include>
 			<onup>14</onup>
-			<ondown>15</ondown>
+			<ondown>14</ondown>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<visible>Control.HasFocus(10) | ControlGroup(14).HasFocus</visible>
@@ -583,7 +583,7 @@
 				<selected>!Skin.HasSetting(nomenutvsearch)</selected>
 			</control>
 -->
-			<control type="radiobutton" id="802">
+			<control type="radiobutton" id="800">
 				<include>Objects_SettingsDefaultRadioButton</include>
 				<label>31290</label>
 				<onclick>Skin.ToggleSetting(nomenusettings)</onclick>
