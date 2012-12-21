@@ -29,7 +29,7 @@
   <string id="31962">Power Menu</string>
   <string id="31963">displays</string>
   <string id="31964">Sleep Display</string>
-  <string id="31965">Reboot Mac</string>
+  <string id="31965">Reboot System</string>
 	
 	<string id="31970">Channels</string>
 	<string id="31971">Video Channels</string>
@@ -75,7 +75,7 @@
 	<string id="32031">OSD SUBTITLE</string>
 	<string id="31170">PRESSING UP ACTIVATES CONTEXT MENU (OFF ACTIVATES FAVORITES)</string>
 	<string id="31171">DARK PANEL</string>
-	<string id="31172">USE SLEEP MAC INSTEAD OF SHUTDOWN ON HOMESCREEN</string>
+	<string id="31172">USE SLEEP SYSTEM INSTEAD OF SHUTDOWN ON HOMESCREEN</string>
 	<string id="31173">USE ALTERNATE DIALOG POPUPS (AEON STARK STYLE)</string>
 
 <!-- Media Window titles -->
@@ -231,12 +231,12 @@
 
 	<string id="31200">Settings</string> 
 	<string id="31201">Customise</string>
-	<string id="31202">Shutdown Mac</string> 
+	<string id="31202">Shutdown System</string> 
 	<string id="31203">Home Visuals: Off</string>
 	<string id="31204">Home Visuals: On</string> 
 	<string id="31205">Now Playing</string>
 	<string id="31206">Shutdown Timer</string> 
-	<string id="31207">Sleep Mac</string> 
+	<string id="31207">Sleep System</string> 
 	<string id="31208">Quit Plex</string>
 	<string id="31209">Sign Out</string>
 	<string id="31210">Eject</string>

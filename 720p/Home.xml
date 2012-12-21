@@ -34,6 +34,7 @@
  		<control type="button" id="334">
 	      <description>Home Menu Offset</description>
    	      <onfocus>Control.Move(300,$INFO[Skin.String(HomeFocusOffset)])</onfocus>
+		  <onfocus>ReplaceWindow(Home)</onfocus>
    	      <onfocus>SetFocus(300)</onfocus>
    	      <visible>Window.Previous(startup) + Skin.HasSetting(customstartupfocus)</visible>
   		</control>
