@@ -17,6 +17,11 @@
       <size>20</size>
     </font>
     <font>
+      <name>Font_Bold14</name>
+      <filename>Ubuntu-B.ttf</filename>
+      <size>14</size>
+    </font>
+   <font>
       <name>Font_Bold24</name>
       <filename>Ubuntu-B.ttf</filename>
       <size>24</size>

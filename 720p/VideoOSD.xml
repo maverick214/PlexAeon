@@ -30,7 +30,7 @@
 
 				<width>790</width>
 				<posx>241</posx>
-				<posy>60</posy>
+				<posy>70</posy>
 				<height>96</height>
 				<itemgap>-10</itemgap>
 				<onup>-</onup>
@@ -114,7 +114,7 @@
 
 				<width>790</width>
 				<posx>241</posx>
-				<posy>60</posy>
+				<posy>70</posy>
 				<height>96</height>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
@@ -206,10 +206,10 @@
 
 			<control type="progress" id="23">
 				<description>Progressbar</description>
-				<posx>112</posx>
-				<posy>40</posy>
-				<width>1057</width>
-				<height>13</height>
+				<posx>142</posx>
+				<posy>57</posy>
+				<width>997</width>
+				<height>20</height>
 				<align>center</align>
 				<info>Player.Progress</info>
 				<texturebg>osd/osd_progress_back.png</texturebg>
@@ -308,54 +308,36 @@
 		<width>1280</width>
 		<texture>osd/codec_top.png</texture>
 	</control>
+
 	<control type="label">
-		<posy>-500</posy>
-		<posx>0</posx>
-		<height>30</height>
-		<width>1280</width>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>Font_OSDSeek</font>
-		<label>[COLOR ffc1c2c3]$LOCALIZE[31062] $INFO[VideoPlayer.Season] | $LOCALIZE[31063] $INFO[VideoPlayer.Episode][/COLOR]</label>
-		<!--<label>[B][COLOR ffc1c2c3]Season $INFO[VideoPlayer.Season] | Episode $INFO[VideoPlayer.Episode][/COLOR][/B]</label>-->
-		<visible>VideoPlayer.Content(episodes)</visible>
-	</control>
-	<control type="label">
-		<posy>-500</posy>
-		<posx>500</posx>
-		<height>30</height>
-		<width>270</width>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>Font_OSDSeek</font>
-		<label>[COLOR ffc1c2c3]$INFO[VideoPlayer.Genre][/COLOR]</label>
-		<visible>VideoPlayer.Content(movies)</visible>
-	</control>
-	<control type="label">
-		<posy>-496</posy>
-		<posx>32</posx>
-		<height>20</height>
-		<width>400</width>
-		<font>Font_OSDOptions</font>
-		<label>[COLOR cdfbfbfb]$INFO[VideoPlayer.Year][/COLOR]</label>
-	</control>
-	<control type="label">
-		<posy>-535</posy>
+		<posy>8</posy>
 		<posx>30</posx>
 		<height>50</height>
-		<width>490</width>
+		<width>700</width>
 		<font>Font_SettingsSectionTitle</font>
-		<label>[COLOR FFffffff]$INFO[VideoPlayer.Title][/COLOR]</label>
+		<label>[COLOR FFffffff]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])[/COLOR]</label>
+		<visible>!VideoPlayer.Content(episodes)</visible>
+	</control>
+
+	<control type="label">
+		<posy>8</posy>
+		<posx>30</posx>
+		<height>50</height>
+		<width>700</width>
+		<font>Font_SettingsSectionTitle</font>
+		<label>[COLOR FFffffff]$INFO[VideoPlayer.Title][/COLOR] [COLOR ffc1c2c3]S$INFO[VideoPlayer.Season] E$INFO[VideoPlayer.Episode][/COLOR]</label>
+		<visible>VideoPlayer.Content(episodes)</visible>
 	</control>
 
 	<control type="textbox">
 		<posy>-545</posy>
-		<posx>840</posx>
-		<height>68</height>
+		<posx>200</posx>
+		<height>70</height>
+		<width>960</width>
 		<aligny>top</aligny>
-		<font>Font_OSDOptions</font>
-		<label>[COLOR cdc1c2c3]$INFO[VideoPlayer.Plot][/COLOR]</label>
-		<autoscroll delay="8000" time="1500" repeat="10000">true</autoscroll>
+		<font>Font_Bold20</font>
+		<label>$INFO[VideoPlayer.Plot]</label>
+		<autoscroll delay="11000" time="2000" repeat="10000">true</autoscroll>
 	</control>
 
 </control>
@@ -478,7 +460,7 @@
 
 			<control type="label">
 				<posx>30</posx>
-				<posy>36</posy>
+				<posy>56</posy>
 				<width>300</width>
 				<height>25</height>
 				<font>Font_OSDTime</font>
@@ -488,7 +470,7 @@
 
 			<control type="label">
 				<posx>30</posx>
-				<posy>92</posy>
+				<posy>112</posy>
 				<width>300</width>
 				<height>25</height>
 				<font>Font_OSDTime</font>
@@ -498,7 +480,7 @@
 
 			<control type="label">
 				<posx>1250</posx>
-				<posy>36</posy>
+				<posy>56</posy>
 				<width>300</width>
 				<height>25</height>
 				<align>right</align>
@@ -509,7 +491,7 @@
 
 			<control type="label">
 				<posx>1250</posx>
-				<posy>92</posy>
+				<posy>112</posy>
 				<width>300</width>
 				<height>25</height>
 				<align>right</align>
