@@ -718,7 +718,6 @@
 		<focusedcolor>FFFFFFFF</focusedcolor>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>9</textoffsety>
-		<aligny>top</aligny>
 		<font>Font_OSDOptions</font>
 		<texturefocus>osd/osd_settings_buttonf.png</texturefocus>
 		<texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>
