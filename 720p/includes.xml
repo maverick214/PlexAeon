@@ -236,7 +236,8 @@
 	</include>
 
 	<include name="ColourcontentRatingVars">
-			<texture>$INFO[ListItem.Property(mediaTag-contentRating),flagging/ratings/mpaa_,.png]</texture>
+		<!--	<texture>$INFO[ListItem.Property(mediaTag-contentRating),flagging/ratings/mpaa_,.png]</texture> -->
+		<info>Listitem.Property(mediaTag::contentRating)</info>
 	</include>
 
 	<include name="WhitecontentRatingVars">
