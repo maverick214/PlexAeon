@@ -89,7 +89,7 @@
 		<aspectratio>stretch</aspectratio>
 		<visible>!Container.Content(episodes)</visible>
 	</control>
-	
+<!--	
 	<control type="largeimage">
 		<description>Cover image</description>
 		<posx>0</posx>
@@ -125,6 +125,7 @@
 		<fadetime>500</fadetime>
 		<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(episodes)</visible>		
 	</control>	
+-->
 <!--	
 	<control type="image">
 		<description>background image</description>
