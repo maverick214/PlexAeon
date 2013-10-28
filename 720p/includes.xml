@@ -327,6 +327,7 @@
 	</include>
 
 	<!-- Global time and weather panel ================================== -->
+<!--
 	<include name="Window-Files">
 		<control type="label" id="12">
 			<posx>70</posx>
@@ -338,7 +339,9 @@
 			<visible>!Control.IsVisible(51) + !Control.IsVisible(57) + !Control.IsVisible(58) + !Control.IsVisible(53) + !Control.IsVisible(551) + !Control.IsVisible(552)</visible>
 		</control>
 </include>
+ -->
  <!-- Weather -->
+<!--
   <include name="WeatherButton">
     <posy>24</posy>
     <width>170</width>
@@ -417,7 +420,7 @@
     <width>50</width>
     <height>50</height>
   </include>
-
+-->
 	<!-- Menu styles ================================== -->
 	<include name="filemanmenugroup">
 		<posx>67</posx>

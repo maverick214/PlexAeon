@@ -33,9 +33,11 @@
 		<ondown>351</ondown>
 	</include>
 	<!-- Weather Backdrop by Current Weather Conditions -->
+<!--
 	<include name="BackgroundVarsWeather2">
 		<thumb>$INFO[Skin.String(CustomWeather)]$INFO[Weather.FanartCode]</thumb>
 	</include>
+-->
 	<!-- End -->
 
 	<include name="MainMenu_Controls_Center">

@@ -214,7 +214,7 @@
 		<imagepath>backdrops/default_shutdown/default.png</imagepath>
 		<info>Skin.String(CustomShutdownbg)</info>
 	</include>
-
+<!--
 	<include name="BackgroundVarsWeatherSpring">
 		<icon>backdrops/spring/spring.png</icon>
 		<imagepath>backdrops/spring/spring.png</imagepath>
@@ -243,6 +243,7 @@
 		<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
 		<info>Skin.String(CustomWeather)</info>
 	</include>
+-->
 <!--
 	<include name="MediaBackdropsMovies">
 		<control type="multiimage">
@@ -693,7 +694,7 @@
 		</control>
 		<!------------------------------------------------------------------->
 
-
+<!--
 <control type="group">
 		<visible>Skin.HasSetting(NoCustomWeatherConditions)</visible>
 		<control type="multiimage">
@@ -786,7 +787,7 @@
 			<visible>!Skin.HasSetting(NoCustomWeatherConditions)</visible>
 			<visible>!Skin.String(CustomWeatherFolder)</visible>
 		</control>
-
+-->
 		<control type="largeimage">
 			<animation effect="fade" end="100" time="600" delay="50">Visible</animation>
 			<animation effect="fade" end="0" time="600">Hidden</animation>
